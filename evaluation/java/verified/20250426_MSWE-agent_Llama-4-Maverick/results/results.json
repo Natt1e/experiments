@@ -2,10 +2,11 @@
     "total_instances": 128,
     "submitted_instances": 123,
     "completed_instances": 123,
+    "incomplete_instances": 0,
     "resolved_instances": 20,
     "unresolved_instances": 103,
-    "empty_error_patch_instances": 5,
-    "unstopped_instances": 0,
+    "empty_patch_instances": 5,
+    "error_instances": 0,
     "completed_ids": [
         "elastic__logstash-16681",
         "mockito__mockito-3167",
@@ -262,7 +263,7 @@
         "googlecontainertools__jib-4035",
         "googlecontainertools__jib-4144"
     ],
-    "resolved": [
+    "resolved_ids": [
         "fasterxml__jackson-core-566",
         "fasterxml__jackson-databind-4050",
         "fasterxml__jackson-databind-4015",
@@ -389,13 +390,12 @@
         "fasterxml__jackson-core-729",
         "fasterxml__jackson-dataformat-xml-590"
     ],
-    "empty_error_patch_ids": [
+    "empty_patch_ids": [
         "elastic__logstash-13931",
         "alibaba__fastjson2-82",
         "google__gson-1787",
         "fasterxml__jackson-dataformat-xml-531",
         "fasterxml__jackson-core-891"
     ],
-    "unstopped_containers": [],
-    "unremoved_images": []
+    "error_ids": []
 }
