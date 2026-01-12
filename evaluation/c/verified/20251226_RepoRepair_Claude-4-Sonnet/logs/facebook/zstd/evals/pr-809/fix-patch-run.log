@@ -1,1573 +1,0 @@
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [4432 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1308 kB]
-Get:7 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [33.1 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [4801 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [4998 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [36.8 kB]
-Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
-Fetched 35.7 MB in 25s (1439 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-3 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-patch is already the newest version (2.7.6-6).
-patch set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-make[1]: Entering directory '/home/zstd/lib'
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/entropy_common.o common/entropy_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/pool.o common/pool.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/error_private.o common/error_private.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/xxhash.o common/xxhash.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/fse_decompress.o common/fse_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/threading.o common/threading.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/zstd_common.o common/zstd_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/huf_compress.o compress/huf_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/fse_compress.o compress/fse_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/zstd_compress.o compress/zstd_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/zstdmt_compress.o compress/zstdmt_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o decompress/huf_decompress.o decompress/huf_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o decompress/zstd_decompress.o decompress/zstd_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/divsufsort.o dictBuilder/divsufsort.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/zdict.o dictBuilder/zdict.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/cover.o dictBuilder/cover.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_compress.o deprecated/zbuff_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_common.o deprecated/zbuff_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_decompress.o deprecated/zbuff_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v04.o legacy/zstd_v04.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v05.o legacy/zstd_v05.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v06.o legacy/zstd_v06.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v07.o legacy/zstd_v07.c
-compiling static library
-compiling dynamic library 1.3.1
-creating versioned links
-make[1]: Leaving directory '/home/zstd/lib'
-make[1]: Entering directory '/home/zstd/programs'
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4  -c -o zstdcli.o zstdcli.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4  -c -o fileio.o fileio.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4  -c -o bench.o bench.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4  -c -o datagen.o datagen.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4  -c -o dibio.o dibio.c
-==> building with threading support
-==> building zstd with .gz compression support
-==> no liblzma, building zstd without .xz/.lzma support
-- lz4 support is disabled
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS  -DZSTD_LEGACY_SUPPORT=4 -O3   -pthread -lz  ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/legacy/zstd_v04.c ../lib/legacy/zstd_v05.c ../lib/legacy/zstd_v06.c ../lib/legacy/zstd_v07.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c zstdcli.o fileio.o bench.o datagen.o dibio.o  -o zstd -pthread -lz 
-make[1]: Leaving directory '/home/zstd/programs'
-cp programs/zstd .
-make -C programs allVariants
-make[1]: Entering directory '/home/zstd/programs'
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls   -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NODECOMPRESS ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c zstdcli.c fileio.c -o zstd-compress
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls   -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c zstdcli.c fileio.c -o zstd-decompress
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -Os -s  -DZSTD_NOBENCH -DZSTD_NODICT ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c zstdcli.c fileio.c -o zstd-small
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DZSTD_NEWAPI -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c zstdcli.o fileio.c bench.o datagen.o dibio.o -o zstd-nolegacy 
-../lib/dictBuilder/cover.c: In function ‘COVER_buildDictionary’:
-../lib/dictBuilder/cover.c:615:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-  615 |   const U32 epochSize = (U32)(ctx->suffixSize / epochs);
-      |   ^~~~~
-make[1]: Leaving directory '/home/zstd/programs'
-make -C tests test
-make[1]: Entering directory '/home/zstd/tests'
-make -C ../programs zstd
-make[2]: Entering directory '/home/zstd/programs'
-make[2]: 'zstd' is up to date.
-make[2]: Leaving directory '/home/zstd/programs'
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1   ../programs/datagen.c datagencli.c -o datagen
-file ../programs/zstd
-../programs/zstd: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=59b74a90742dd06d30a34119c25a64034c8ff614, for GNU/Linux 3.2.0, not stripped
-ZSTD=" ../programs/zstd" ./playTests.sh --test-large-data
--e 
-Starting playTests.sh isWindows=false ZSTD=' ../programs/zstd'
--e 
-**** simple tests **** 
-
--e test : basic compression 
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
--e test : basic decompression
-                                                                               tmp.zst             : 65537 bytes 
--e test : too large compression level (must fail)
-Warning : compression level higher than max, reduced to 19 
-                                                                               tmp                  : 31.08%   ( 65537 =>  20372 bytes, tmp.zst) 
--e test : compress to stdout
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, /*stdout*\) 
--e test : compress to named file
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmpCompressed) 
--e test : -o must be followed by filename (must fail)
-error : command must be followed by argument 
--e test : force write, correct order
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmpCompressed) 
--e test : forgotten argument
-error : command must be followed by argument 
--e test : implied stdout when input is stdin
--e bob
--e test : null-length file roundtrip
--e -n 
--e test : decompress file with wrong suffix (must fail)
-zstd: tmpCompressed: unknown suffix -- ignored 
-zstd: tmp: unknown suffix -- ignored 
--e test : decompress into stdout
-                                                                               tmpCompressed       : 65537 bytes 
-                                                                               tmpCompressed       : 65537 bytes 
--e test : decompress from stdin into stdout
--e test : impose memory limitation (must fail)
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
--e test : overwrite protection
-zstd: tmp.zst already exists; not overwritten  
--e test : force overwrite
--e test : overwrite readonly file
-zstd: tmpro.zst already exists; not overwritten  
--e test : file removal
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
-                                                                               tmp.zst             : 65537 bytes 
--e test : --rm on stdin
-zstd: tmp is not a regular file -- ignored 
--e 
-**** Advanced compression parameters **** 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
--e roundTripTest: ./datagen -g512K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.53%   (524288 => 170548 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=slen=3,tlen=48,strat=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 34.41%   (524288 => 180424 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=strat=6,wlog=23,clog=23,hlog=22,slog=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.32%   (524288 => 169426 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=windowLog=23,chainLog=23,hashLog=22,searchLog=6,searchLength=3,targetLength=48,strategy=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 34.34%   (524288 => 180022 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g512K  |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.95%   (524288 => 162264 bytes, /*stdout*\) 
--e 
-**** Pass-Through mode **** 
--e Hello world 1!
--e Hello world 2!
--e Hello world 3!
--e 
-**** frame concatenation **** 
-                                                                               hello.tmp            :230.00%   (    10 =>     23 bytes, /*stdout*\) 
-                                                                               world.tmp            :230.00%   (    10 =>     23 bytes, /*stdout*\) 
-                                                                               helloworld.zstd     : 20 bytes 
--e hello 
--e world!
--e frame concatenation without checksum
-                                                                               hello.tmp            :190.00%   (    10 =>     19 bytes, /*stdout*\) 
-                                                                               world.tmp            :190.00%   (    10 =>     19 bytes, /*stdout*\) 
-                                                                               helloworld.zstd     : 20 bytes 
--e hello 
--e world!
--e frame concatenation tests completed
--e 
-**** flush write error test **** 
--e echo -e foo |  ../programs/zstd > /dev/full
-zstd: /*stdout*\: No space left on device 
-zstd: error 1 : zstd: /*stdout*\: No such file or directory 
--e echo -e foo |  ../programs/zstd |  ../programs/zstd -d > /dev/full
-zstd: /*stdout*\: No space left on device 
--e 
-**** symbolic link test **** 
-Warning : world.tmp is a symbolic link, ignoring
-                                                                               hello.tmp            :186.67%   (    15 =>     28 bytes, hello.tmp.zst) 
--e 
-**** test sparse file support **** 
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpSparseRegen are identical
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutSparse are identical
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutNoSparse are identical
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpSparse
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpSparseRegen
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\           : 1200007 bytes 
-
-Files - and tmpSparseOdd are identical
-44 -rw-r--r-- 1 root root 1200007 Dec 25 10:34 tmpSparseOdd
--e 
- Sparse Compatibility with Console :
--e Hello World 1 !
--e Hello World 2 !
--e 
- Sparse Compatibility with Append :
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparse1M          :  0.01%   (1048576 =>    118 bytes, tmpSparseCompressed) 
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparseCompressed : 1048576 bytes 
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmpSparseCompressed : 1048576 bytes 
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpSparse
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:34 tmpSparse1M
-2048 -rw-r--r-- 1 root root 2097152 Dec 25 10:34 tmpSparse2M
-   4 -rw-r--r-- 1 root root     118 Dec 25 10:34 tmpSparseCompressed
-  44 -rw-r--r-- 1 root root 1200007 Dec 25 10:34 tmpSparseOdd
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpSparseRegen
-1036 -rw-r--r-- 1 root root 2097152 Dec 25 10:34 tmpSparseRegenerated
--e 
-**** multiple files tests **** 
--e compress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmp1
-  24 -rw-r--r-- 1 root root   21664 Dec 25 10:34 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:34 tmp2
-  36 -rw-r--r-- 1 root root   32779 Dec 25 10:34 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:34 tmp3
- 336 -rw-r--r-- 1 root root  342363 Dec 25 10:34 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:34 tmpCompressed
-  24 -rw-r--r-- 1 root root   21275 Dec 25 10:34 tmpCompressed.zst
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmpResult
-  24 -rw-r--r-- 1 root root   21253 Dec 25 10:34 tmpResult.zst
--e decompress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmp1
-  24 -rw-r--r-- 1 root root   21664 Dec 25 10:34 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:34 tmp2
-  36 -rw-r--r-- 1 root root   32779 Dec 25 10:34 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:34 tmp3
- 336 -rw-r--r-- 1 root root  342363 Dec 25 10:34 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:34 tmpCompressed
-  24 -rw-r--r-- 1 root root   21275 Dec 25 10:34 tmpCompressed.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmpResult
-  24 -rw-r--r-- 1 root root   21253 Dec 25 10:34 tmpResult.zst
--e compress tmp* into stdout > tmpall : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmp1
-  24 -rw-r--r-- 1 root root   21664 Dec 25 10:34 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:34 tmp2
-  36 -rw-r--r-- 1 root root   32779 Dec 25 10:34 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:34 tmp3
- 336 -rw-r--r-- 1 root root  342363 Dec 25 10:34 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:34 tmpCompressed
-  24 -rw-r--r-- 1 root root   21275 Dec 25 10:34 tmpCompressed.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmpResult
-  24 -rw-r--r-- 1 root root   21253 Dec 25 10:34 tmpResult.zst
- 388 -rw-r--r-- 1 root root  396806 Dec 25 10:34 tmpall
--e decompress tmpall* into stdout > tmpdec : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmp1
-  24 -rw-r--r-- 1 root root   21664 Dec 25 10:34 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:34 tmp2
-  36 -rw-r--r-- 1 root root   32779 Dec 25 10:34 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:34 tmp3
- 336 -rw-r--r-- 1 root root  342363 Dec 25 10:34 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:34 tmpCompressed
-  24 -rw-r--r-- 1 root root   21275 Dec 25 10:34 tmpCompressed.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:34 tmpOutSparse
-   4 -rw-r--r-- 1 root root     544 Dec 25 10:34 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:34 tmpResult
-  24 -rw-r--r-- 1 root root   21253 Dec 25 10:34 tmpResult.zst
- 388 -rw-r--r-- 1 root root  396806 Dec 25 10:34 tmpall
- 388 -rw-r--r-- 1 root root  396806 Dec 25 10:34 tmpall2
-2380 -rw-r--r-- 1 root root 2433026 Dec 25 10:34 tmpdec
--e compress multiple files including a missing one (notHere) : 
-zstd: notHere is not a regular file -- ignored 
--e 
-**** dictionary tests **** 
--e - test with raw dict (content only) 
-
-
-
--e - Create first dictionary 
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Trying 5 different sets of parameters
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                               k=1024
-d=8
-steps=4
-Save dictionary of size 112640 into file tmpDict 
-                                                                               tmp                  : 16.98%   ( 37007 =>   6284 bytes, tmp.zst) 
-                                                                               tmp.zst             : 37007 bytes 
--e - Create second (different) dictionary 
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Trying 5 different sets of parameters
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                               k=1024
-d=8
-steps=4
-Save dictionary of size 112640 into file tmpDictC 
-tmp.zst : Decoding error (36) : Dictionary mismatch 
--e - Create dictionary with short dictID
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Trying 5 different sets of parameters
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                               k=1024
-d=8
-steps=4
-Save dictionary of size 112640 into file tmpDict1 
-tmpDict tmpDict1 differ: byte 5, line 1
--e - Create dictionary with wrong dictID parameter order (must fail)
-error : command must be followed by argument 
--e - Create dictionary with size limit
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Shuffling input files
-                                                                               Trying 5 different sets of parameters
-d=8
-Training on 19 samples of total size 490006
-Constructing partial suffix array
-Computing frequencies
-k=50
-Breaking content into 81 epochs of size 6049
-                                                                                                                                                     statistics ... 
-k=537
-Breaking content into 7 epochs of size 69999
-                                                                                                                                                     statistics ... 
-k=1024
-Breaking content into 4 epochs of size 122499
-                                                                                                                                                     statistics ... 
-k=1511
-Breaking content into 2 epochs of size 244999
-                                                                                                                                                     statistics ... 
-k=1998
-Breaking content into 2 epochs of size 244999
-                                                                                                                                                     statistics ... 
-                                                                               k=537
-d=8
-steps=4
-Save dictionary of size 4096 into file tmpDict2 
--e - Create dictionary with small size limit
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Shuffling input files
-                                                                               Trying 5 different sets of parameters
-d=8
-Training on 19 samples of total size 490006
-Constructing partial suffix array
-Computing frequencies
-k=50
-Breaking content into 20 epochs of size 24499
-                                                                                                                                                     statistics ... 
-k=537
-Breaking content into 1 epochs of size 489999
-                                                                                                                                                     statistics ... 
-k=1024
-Breaking content into 1 epochs of size 489999
-                                                                                                                                                     statistics ... 
-k=1511
-Failed to finalize dictionary
-k=1998
-Failed to finalize dictionary
-                                                                               k=1024
-d=8
-steps=4
-Save dictionary of size 1024 into file tmpDict3 
--e - Create dictionary with wrong parameter order (must fail)
-error : command must be followed by argument 
--e - Compress without dictID
-                                                                               tmp                  : 16.97%   ( 37007 =>   6280 bytes, tmp.zst) 
-                                                                               tmp.zst             : 37007 bytes 
--e - Compress with wrong argument order (must fail)
-error : command must be followed by argument 
--e - Compress multiple files with dictionary
-dirTestDict/bench.c: OK
-dirTestDict/bench.h: OK
-dirTestDict/datagen.c: OK
-dirTestDict/datagen.h: OK
-dirTestDict/datagencli.c: OK
-dirTestDict/decodecorpus.c: OK
-dirTestDict/dibio.c: OK
-dirTestDict/dibio.h: OK
-dirTestDict/fileio.c: OK
-dirTestDict/fileio.h: OK
-dirTestDict/fullbench.c: OK
-dirTestDict/fuzzer.c: OK
-dirTestDict/invalidDictionaries.c: OK
-dirTestDict/legacy.c: OK
-dirTestDict/longmatch.c: OK
-dirTestDict/namespaceTest.c: OK
-dirTestDict/paramgrill.c: OK
-dirTestDict/platform.h: OK
-dirTestDict/poolTests.c: OK
-dirTestDict/roundTripCrash.c: OK
-dirTestDict/symbols.c: OK
-dirTestDict/util.h: OK
-dirTestDict/zbufftest.c: OK
-dirTestDict/zstdcli.c: OK
-dirTestDict/zstreamtest.c: OK
--e - dictionary builder on bogus input
-dictionary training failed : Cannot create Dictionary from provided samples 
-
-dictionary training failed : Cannot create Dictionary from provided samples 
--e 
-**** cover dictionary tests **** 
-
--e - Create first dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 19 samples of total size 490006
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2448 epochs of size 200
-                                                                                                                                                     statistics ... 
-Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDict 
-                                                                               tmp                  : 18.79%   ( 37007 =>   6955 bytes, tmp.zst) 
-                                                                               tmp.zst             : 37007 bytes 
--e - Create second (different) dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 25 samples of total size 527101
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2011 epochs of size 262
-                                                                                                                                                     statistics ... 
-Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDictC 
-tmp.zst : Decoding error (36) : Dictionary mismatch 
--e - Create dictionary with short dictID
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 19 samples of total size 490006
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2448 epochs of size 200
-                                                                                                                                                     statistics ... 
-Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDict1 
-tmpDict tmpDict1 differ: byte 5, line 1
--e - Create dictionary with size limit
-                                                                               Trying 18 different sets of parameters
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-55%                                                                             statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                      statistics ... 
-                                                                               k=536
-d=6
-steps=8
-Save dictionary of size 4096 into file tmpDict2 
--e 
-**** legacy dictionary tests **** 
-
--e - Create first dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 35397 into file tmpDict 
-                                                                               tmp                  : 21.62%   ( 37007 =>   8001 bytes, tmp.zst) 
-                                                                               tmp.zst             : 37007 bytes 
--e - Create second (different) dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 25 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 38626 into file tmpDictC 
-tmp.zst : Decoding error (36) : Dictionary mismatch 
--e - Create dictionary with short dictID
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 35397 into file tmpDict1 
-tmpDict tmpDict1 differ: byte 5, line 1
--e - Create dictionary with size limit
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-!  note : calculated dictionary significantly larger than requested (35244 > 4096) 
-!  consider increasing dictionary size, or produce denser dictionary (-s1) 
-!  always test dictionary efficiency on real samples 
-                                                                      statistics ... 
-Save dictionary of size 4096 into file tmpDict2 
--e 
-**** integrity tests **** 
--e test one file (tmp1.zst) 
-
-                                                                               tmp1                 : 32.44%   ( 65537 =>  21262 bytes, tmp1.zst) 
-                                                                               tmp1.zst            : 65537 bytes 
-                                                                               tmp1.zst            : 65537 bytes 
--e test multiple files (*.zst) 
-                                                                               tmp1.zst            : 65537 bytes 
--e test bad files (*) 
-zstd: Makefile: unsupported format 
-zstd: README.md: unsupported format 
-zstd: datagen: unsupported format 
-zstd: datagencli.c: unsupported format 
-zstd: decodecorpus.c: unsupported format 
-zstd: files is a directory -- ignored 
-zstd: fullbench.c: unsupported format 
-zstd: fuzz is a directory -- ignored 
-zstd: fuzzer.c: unsupported format 
-zstd: gzip is a directory -- ignored 
-zstd: invalidDictionaries.c: unsupported format 
-zstd: legacy.c: unsupported format 
-zstd: longmatch.c: unsupported format 
-zstd: namespaceTest.c: unsupported format 
-zstd: paramgrill.c: unsupported format 
-zstd: playTests.sh: unsupported format 
-zstd: poolTests.c: unsupported format 
-zstd: roundTripCrash.c: unsupported format 
-zstd: symbols.c: unsupported format 
-zstd: test-zstd-speed.py: unsupported format 
-zstd: test-zstd-versions.py: unsupported format 
-zstd: tmp1: unsupported format 
-zstd: zbufftest.c: unsupported format 
-zstd: zstreamtest.c: unsupported format 
-zstd: tmp1: unsupported format 
-zstd: tmp2.zst: unsupported format 
-
-zstd: tmp3: unexpected end of file 
--e test --rm and --test combined 
-                                                                               tmp1.zst            : 65537 bytes 
-tmpSplit.aa : Read error (39) : premature end 
-zstd: tmpSplit.ab: unsupported format 
-
-                                                                               /*stdin*\           : 65537 bytes 
--e 
-**** golden files tests **** 
-                                                                               files/huffman-compressed-larger: 142 bytes 
-                                                                               files/huffman-compressed-larger :109.09%   (   143 =>    156 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 143 bytes 
--e 
-**** benchmark mode tests **** 
--e bench one file
-
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21249 (3.084), 445.8 MB/s =-tmp1              :     65537 ->     21249 (3.084), 445.8 MB/s ,2259.9 MB/s 3#
--e bench multiple levels
-Benchmarking levels from 1 to 3
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21190 (3.093), 728.2 MB/s =-tmp1              :     65537 ->     21190 (3.093), 728.2 MB/s ,3120.8 MB/s 1#
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21073 (3.110), 590.4 MB/s =-tmp1              :     65537 ->     21073 (3.110), 590.4 MB/s ,3120.8 MB/s 2#
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21249 (3.084), 420.1 MB/s =-tmp1              :     65537 ->     21249 (3.084), 420.1 MB/s ,1820.5 MB/s 3#
--e with recursive and quiet modes
-bench 1.3.1 : input 65537 bytes, 1 seconds, 0 KB blocks
--1        21190 (3.093) 897.77 MB/s 3855.1 MB/s  tmp1
--2        21073 (3.110) 720.19 MB/s 3855.1 MB/s  tmp1
--e 
-**** gzip compatibility tests **** 
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
--e gzip support detected
-gzip 1.10
-Copyright (C) 2018 Free Software Foundation, Inc.
-Copyright (C) 1993 Jean-loup Gailly.
-This is free software.  You may redistribute copies of it under the terms of
-the GNU General Public License <https://www.gnu.org/licenses/gpl.html>.
-There is NO WARRANTY, to the extent permitted by law.
-
-Written by Jean-loup Gailly.
-
-                                                                               tmp                  : 38.37%   ( 65537 =>  25149 bytes, tmp.gz) 
-tmp.gz:	 OK
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmp.gz              : 65537 bytes 
--e 
-**** gzip frame tests **** 
-
-                                                                               tmp                  : 38.37%   ( 65537 =>  25149 bytes, tmp.gz) 
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
-                                                                               /*stdin*\           : 262148 bytes 
-zstd: /*stdin*\: premature gz end 
--e 
-**** xz compatibility tests **** 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
--e xz mode not supported
--e 
-**** xz frame tests **** 
--e xz mode not supported
--e 
-**** lz4 compatibility tests **** 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
--e lz4 mode not supported
--e 
-**** lz4 frame tests **** 
--e lz4 mode not supported
--e 
-**** zstd round-trip tests **** 
--e roundTripTest: ./datagen   |  ../programs/zstd -v |  ../programs/zstd -d
-
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               /*stdin*\            : 32.43%   ( 65537 =>  21253 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g15K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               /*stdin*\            : 25.95%   ( 15360 =>   3986 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g127K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 31.99%   (130048 =>  41598 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g255K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.78%   (261120 =>  85590 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g522K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.50%   (534528 => 173731 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g519K  |  ../programs/zstd -v6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.43%   (531456 => 172360 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g517K  |  ../programs/zstd -v16 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.35%   (529408 => 171263 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g516K  |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.93%   (528384 => 163442 bytes, /*stdout*\) 
--e fileRoundTripTest: ./datagen -g500K  > tmp &&  ../programs/zstd -v -c tmp |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmp                  : 32.49%   (512000 => 166327 bytes, /*stdout*\) 
--e 
-**** zstdmt round-trip tests **** 
--e roundTripTest: ./datagen -g4M  |  ../programs/zstd -v1 -T0 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Note: 8 physical core(s) detected 
-
-                                                                               /*stdin*\            : 31.18%   (4194304 => 1307782 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g8M  |  ../programs/zstd -v3 -T2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.16%   (8388608 => 2698035 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g8000K  |  ../programs/zstd -v2 --threads=2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            : 31.07%   (8192000 => 2545410 bytes, /*stdout*\) 
--e fileRoundTripTest: ./datagen -g4M  > tmp &&  ../programs/zstd -v19 -T2 -B1M -c tmp |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-                                                                               tmp                  : 30.25%   (4194304 => 1268612 bytes, /*stdout*\) 
--e 
-**** zstd --list/-l single frame tests ****
-
-
-
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 4
-tmp1.zst (1/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-tmp2.zst (2/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp2.zst
-tmp3.zst (3/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp3.zst
-tmp4.zst (4/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp4.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 4
-tmp1.zst (1/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp2.zst (2/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp3.zst (3/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-tmp4.zst (4/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 4
-tmp1.zst (1/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-tmp2.zst (2/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp2.zst
-tmp3.zst (3/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp3.zst
-tmp4.zst (4/4):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp4.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 4
-tmp1.zst (1/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-tmp2.zst (2/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp3.zst (3/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp4.zst (4/4):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
--e 
-**** zstd --list/-l multiple frame tests ****
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 8
-tmp1.zst (1/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-tmp12.zst (2/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp12.zst
-tmp1234.zst (3/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              4    83.02 MB  XXH64  tmp1234.zst
-tmp124.zst (4/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              3    62.26 MB  XXH64  tmp124.zst
-tmp2.zst (5/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp2.zst
-tmp3.zst (6/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp3.zst
-tmp34.zst (7/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp34.zst
-tmp4.zst (8/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp4.zst
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 8
-tmp1.zst (1/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp12.zst (2/8):
-# Zstandard Frames: 2
-# Skippable Frames: 0
-Compressed Size: 41.51 KB (42506 B)
-Check: XXH64
-
-tmp1234.zst (3/8):
-# Zstandard Frames: 4
-# Skippable Frames: 0
-Compressed Size: 83.02 KB (85012 B)
-Check: XXH64
-
-tmp124.zst (4/8):
-# Zstandard Frames: 3
-# Skippable Frames: 0
-Compressed Size: 62.26 KB (63759 B)
-Check: XXH64
-
-tmp2.zst (5/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp3.zst (6/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp34.zst (7/8):
-# Zstandard Frames: 2
-# Skippable Frames: 0
-Compressed Size: 41.51 KB (42506 B)
-Check: XXH64
-
-tmp4.zst (8/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 8
-tmp1.zst (1/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-tmp12.zst (2/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp12.zst
-tmp1234.zst (3/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              4    83.02 MB  XXH64  tmp1234.zst
-tmp124.zst (4/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              3    62.26 MB  XXH64  tmp124.zst
-tmp2.zst (5/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp2.zst
-tmp3.zst (6/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp3.zst
-tmp34.zst (7/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp34.zst
-tmp4.zst (8/8):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp4.zst
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 8
-tmp1.zst (1/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp12.zst (2/8):
-# Zstandard Frames: 2
-# Skippable Frames: 0
-Compressed Size: 41.51 KB (42506 B)
-Check: XXH64
-
-tmp1234.zst (3/8):
-# Zstandard Frames: 4
-# Skippable Frames: 0
-Compressed Size: 83.02 KB (85012 B)
-Check: XXH64
-
-tmp124.zst (4/8):
-# Zstandard Frames: 3
-# Skippable Frames: 0
-Compressed Size: 62.26 KB (63759 B)
-Check: XXH64
-
-tmp2.zst (5/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp3.zst (6/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp34.zst (7/8):
-# Zstandard Frames: 2
-# Skippable Frames: 0
-Compressed Size: 41.51 KB (42506 B)
-Check: XXH64
-
-tmp4.zst (8/8):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
--e 
-**** zstd --list/-l error detection tests ****
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 2
-tmp1 (1/2):
-File tmp1 not compressed with zstd
-tmp1.zst (2/2):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 12
-tmp1 (1/12):
-File tmp1 not compressed with zstd
-tmp1.zst (2/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp1.zst
-tmp12.zst (3/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp12.zst
-tmp1234.zst (4/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              4    83.02 MB  XXH64  tmp1234.zst
-tmp124.zst (5/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              3    62.26 MB  XXH64  tmp124.zst
-tmp2 (6/12):
-File tmp2 not compressed with zstd
-tmp2.zst (7/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp2.zst
-tmp3 (8/12):
-File tmp3 not compressed with zstd
-tmp3.zst (9/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp3.zst
-tmp34.zst (10/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              2    41.51 MB  XXH64  tmp34.zst
-tmp4 (11/12):
-File tmp4 not compressed with zstd
-tmp4.zst (12/12):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1    20.75 MB  XXH64  tmp4.zst
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 5
-tmp1 (1/5):
-File tmp1 not compressed with zstd
-
-tmp1.zst (2/5):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.75 KB (21253 B)
-Check: XXH64
-
-tmp12.zst (3/5):
-# Zstandard Frames: 2
-# Skippable Frames: 0
-Compressed Size: 41.51 KB (42506 B)
-Check: XXH64
-
-tmp1234.zst (4/5):
-# Zstandard Frames: 4
-# Skippable Frames: 0
-Compressed Size: 83.02 KB (85012 B)
-Check: XXH64
-
-tmp124.zst (5/5):
-# Zstandard Frames: 3
-# Skippable Frames: 0
-Compressed Size: 62.26 KB (63759 B)
-Check: XXH64
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 2
-tmp2 (1/2):
-File tmp2 not compressed with zstd
-
-tmp23.zst (2/2):
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-zstd: tmp23.zst is not a regular file -- ignored 
-Error: could not open source file tmp23.zst
--e 
-**** zstd --list/-l test with null files ****
-
-                                                                               tmp5                 :1300.00%   (     0 =>     13 bytes, tmp5.zst) 
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp5.zst (1/1):
-Skippable  Non-Skippable  Compressed  Uncompressed  Ratio  Check  Filename
-        0              1     0.01 KB       0.00 KB  0.000  XXH64  tmp5.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 2
-tmp5 (1/2):
-File tmp5 not compressed with zstd
-tmp5.zst (2/2):
-Skippable  Non-Skippable  Compressed  Uncompressed  Ratio  Check  Filename
-        0              1     0.01 KB       0.00 KB  0.000  XXH64  tmp5.zst
-Error: reached end of file with incomplete frame
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp5.zst (1/1):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 0.01 KB (13 B)
-Decompressed Size: 0.00 KB (0 B)
-Ratio: 0.0000
-Check: XXH64
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 2
-tmp5 (1/2):
-File tmp5 not compressed with zstd
-
-tmp5.zst (2/2):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 0.01 KB (13 B)
-Decompressed Size: 0.00 KB (0 B)
-Ratio: 0.0000
-Check: XXH64
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Error: reached end of file with incomplete frame
--e 
-**** zstd --list/-l test with no content size field ****
-
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp6.zst (1/1):
-Skippable  Non-Skippable  Compressed  Check  Filename
-        0              1   330.03 MB  XXH64  tmp6.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp6.zst (1/1):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 330.03 KB (337952 B)
-Check: XXH64
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
--e 
-**** zstd --list/-l test with no checksum ****
-                                                                               tmp1                 : 32.44%   ( 65537 =>  21258 bytes, tmp1.zst) 
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp1.zst (1/1):
-Skippable  Non-Skippable  Compressed  Uncompressed  Ratio  Check  Filename
-        0              1    20.76 KB      64.00 KB  3.083   None  tmp1.zst
-===========================================
-Printing information about compressed files
-===========================================
-Number of files listed: 1
-tmp1.zst (1/1):
-# Zstandard Frames: 1
-# Skippable Frames: 0
-Compressed Size: 20.76 KB (21258 B)
-Decompressed Size: 64.00 KB (65537 B)
-Ratio: 3.0829
-Check: None
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
--e roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v1 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 77 MB ==> 31.62%Read : 158 MB ==> 31.63%Read : 238 MB ==> 31.63%
-                                                                               /*stdin*\            : 31.63%   (270000000 => 85392497 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 63 MB ==> 31.38%Read : 127 MB ==> 31.39%Read : 195 MB ==> 31.40%
-                                                                               /*stdin*\            : 31.40%   (270000000 => 84768058 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v3 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 44 MB ==> 32.48%Read : 89 MB ==> 32.50%Read : 134 MB ==> 32.48%Read : 179 MB ==> 32.49%Read : 224 MB ==> 32.49%
-                                                                               /*stdin*\            : 32.49%   (270000000 => 87714660 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v4 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 38 MB ==> 27.47%Read : 76 MB ==> 27.50%Read : 114 MB ==> 27.49%
-                                                                               /*stdin*\            : 27.47%   (140000000 => 38461858 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v5 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 22 MB ==> 26.97%Read : 45 MB ==> 26.98%Read : 68 MB ==> 26.98%Read : 91 MB ==> 27.03%Read : 113 MB ==> 27.00%
-                                                                               /*stdin*\            : 26.99%   (140000000 => 37781377 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 19 MB ==> 27.21%Read : 39 MB ==> 27.21%Read : 58 MB ==> 27.24%Read : 77 MB ==> 27.26%Read : 97 MB ==> 27.26%Read : 115 MB ==> 27.24%
-                                                                               /*stdin*\            : 27.23%   (140000000 => 38123143 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v7 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 18 MB ==> 21.47%Read : 36 MB ==> 21.43%Read : 54 MB ==> 21.42%
-                                                                               /*stdin*\            : 21.44%   (70000000 => 15011439 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v8 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 9 MB ==> 21.39%Read : 18 MB ==> 21.35%Read : 29 MB ==> 21.28%Read : 38 MB ==> 21.35%Read : 49 MB ==> 21.33%Read : 60 MB ==> 21.32%
-                                                                               /*stdin*\            : 21.32%   (70000000 => 14926900 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v9 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 8 MB ==> 21.37%Read : 17 MB ==> 21.33%Read : 26 MB ==> 21.28%Read : 35 MB ==> 21.30%Read : 44 MB ==> 21.31%Read : 52 MB ==> 21.31%Read : 60 MB ==> 21.32%
-                                                                               /*stdin*\            : 21.32%   (70000000 => 14923535 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v10 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 7 MB ==> 18.29%Read : 16 MB ==> 18.45%Read : 23 MB ==> 18.55%Read : 31 MB ==> 18.47%
-                                                                               /*stdin*\            : 18.45%   (35000000 => 6457323 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v11 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 4 MB ==> 18.15%Read : 7 MB ==> 18.40%Read : 11 MB ==> 18.63%Read : 13 MB ==> 18.61%Read : 15 MB ==> 18.57%Read : 16 MB ==> 18.65%Read : 19 MB ==> 18.67%Read : 23 MB ==> 18.69%Read : 27 MB ==> 18.65%Read : 32 MB ==> 18.61%
-                                                                               /*stdin*\            : 18.61%   (35000000 => 6511940 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v12 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 3 MB ==> 18.12%Read : 6 MB ==> 18.41%Read : 9 MB ==> 18.61%Read : 12 MB ==> 18.61%Read : 16 MB ==> 18.61%Read : 19 MB ==> 18.67%Read : 22 MB ==> 18.68%Read : 25 MB ==> 18.68%Read : 29 MB ==> 18.64%Read : 32 MB ==> 18.62%
-                                                                               /*stdin*\            : 18.61%   (35000000 => 6513171 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000013 -P80 |  ../programs/zstd -v13 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 2 MB ==> 15.74%Read : 4 MB ==> 15.85%Read : 6 MB ==> 15.80%Read : 8 MB ==> 15.86%Read : 11 MB ==> 15.88%Read : 12 MB ==> 15.88%Read : 14 MB ==> 15.88%Read : 15 MB ==> 15.92%
-                                                                               /*stdin*\            : 15.90%   (18000013 => 2861999 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000014 -P80 |  ../programs/zstd -v14 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 2 MB ==> 15.74%Read : 4 MB ==> 15.82%Read : 5 MB ==> 15.81%Read : 6 MB ==> 15.84%Read : 8 MB ==> 15.85%Read : 9 MB ==> 15.86%Read : 10 MB ==> 15.87%Read : 11 MB ==> 15.87%Read : 12 MB ==> 15.91%Read : 14 MB ==> 15.88%Read : 14 MB ==> 15.91%Read : 15 MB ==> 15.92%
-Read : 17 MB ==> 15.91%                                                                               /*stdin*\            : 15.91%   (18000014 => 2863043 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000015 -P80 |  ../programs/zstd -v15 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 1 MB ==> 15.46%Read : 3 MB ==> 15.64%Read : 4 MB ==> 15.78%Read : 5 MB ==> 15.77%Read : 7 MB ==> 15.83%Read : 8 MB ==> 15.82%Read : 9 MB ==> 15.82%Read : 11 MB ==> 15.84%Read : 12 MB ==> 15.85%Read : 13 MB ==> 15.85%Read : 15 MB ==> 15.89%Read : 16 MB ==> 15.88%
-                                                                               /*stdin*\            : 15.87%   (18000015 => 2856241 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000016 -P80 |  ../programs/zstd -v16 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 1 MB ==> 15.45%Read : 2 MB ==> 15.70%Read : 3 MB ==> 15.69%Read : 4 MB ==> 15.81%Read : 5 MB ==> 15.77%Read : 6 MB ==> 15.82%Read : 7 MB ==> 15.83%Read : 8 MB ==> 15.86%Read : 10 MB ==> 15.87%Read : 11 MB ==> 15.90%Read : 12 MB ==> 15.88%Read : 13 MB ==> 15.91%Read : 14 MB ==> 15.90%Read : 15 MB ==> 15.94%Read : 16 MB ==> 15.94%
-                                                                               /*stdin*\            : 15.93%   (18000016 => 2866588 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000017 -P80 |  ../programs/zstd -v17 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 1 MB ==> 13.72%Read : 2 MB ==> 13.90%Read : 3 MB ==> 13.84%Read : 4 MB ==> 13.92%Read : 5 MB ==> 13.88%Read : 6 MB ==> 13.86%Read : 7 MB ==> 13.88%Read : 8 MB ==> 13.87%Read : 9 MB ==> 13.84%Read : 9 MB ==> 13.87%Read : 10 MB ==> 13.86%Read : 11 MB ==> 13.87%Read : 12 MB ==> 13.86%Read : 13 MB ==> 13.88%Read : 13 MB ==> 13.87%Read : 14 MB ==> 13.86%Read : 15 MB ==> 13.89%Read : 16 MB ==> 13.89%Read : 16 MB ==> 13.88%
-                                                                               /*stdin*\            : 13.87%   (18000017 => 2496308 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000018 -P94 |  ../programs/zstd -v18 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 1 MB ==> 7.36%Read : 2 MB ==> 7.66%Read : 3 MB ==> 7.58%Read : 3 MB ==> 7.61%Read : 4 MB ==> 7.65%Read : 5 MB ==> 7.73%Read : 6 MB ==> 7.71%Read : 7 MB ==> 7.76%Read : 8 MB ==> 7.74%Read : 9 MB ==> 7.74%Read : 10 MB ==> 7.75%Read : 11 MB ==> 7.75%Read : 11 MB ==> 7.72%Read : 12 MB ==> 7.71%Read : 13 MB ==> 7.70%Read : 14 MB ==> 7.71%Read : 15 MB ==> 7.72%Read : 16 MB ==> 7.71%
-                                                                               /*stdin*\            :  7.73%   (18000018 => 1391111 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g18000019 -P94 |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 1 MB ==> 7.34%Read : 2 MB ==> 7.58%Read : 3 MB ==> 7.61%Read : 4 MB ==> 7.61%Read : 4 MB ==> 7.64%Read : 5 MB ==> 7.70%Read : 5 MB ==> 7.69%Read : 6 MB ==> 7.72%Read : 7 MB ==> 7.74%Read : 7 MB ==> 7.74%Read : 8 MB ==> 7.74%Read : 9 MB ==> 7.74%Read : 9 MB ==> 7.76%Read : 10 MB ==> 7.74%Read : 11 MB ==> 7.75%Read : 11 MB ==> 7.73%Read : 12 MB ==> 7.71%Read : 12 MB ==> 7.71%Read : 13 MB ==> 7.70%Read : 13 MB ==> 7.70%Read : 14 MB ==> 7.71%Read : 15 MB ==> 7.71%Read : 15 MB ==> 7.72%Read : 16 MB ==> 7.71%
-Read : 17 MB ==> 7.72%                                                                               /*stdin*\            :  7.73%   (18000019 => 1390503 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g68000020 -P99 |  ../programs/zstd -v20 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 0 MB ==> 4.38%Read : 2 MB ==> 5.18%Read : 3 MB ==> 5.40%Read : 4 MB ==> 5.49%Read : 4 MB ==> 5.57%Read : 5 MB ==> 5.63%Read : 6 MB ==> 5.66%Read : 7 MB ==> 5.71%Read : 7 MB ==> 5.71%Read : 8 MB ==> 5.72%Read : 8 MB ==> 5.75%Read : 9 MB ==> 5.75%Read : 10 MB ==> 5.74%Read : 10 MB ==> 5.74%Read : 11 MB ==> 5.75%Read : 11 MB ==> 5.75%Read : 12 MB ==> 5.75%Read : 12 MB ==> 5.75%Read : 13 MB ==> 5.76%Read : 13 MB ==> 5.76%Read : 14 MB ==> 5.76%Read : 14 MB ==> 5.76%Read : 15 MB ==> 5.77%Read : 15 MB ==> 5.77%Read : 16 MB ==> 5.78%Read : 16 MB ==> 5.78%Read : 17 MB ==> 5.78%Read : 17 MB ==> 5.78%Read : 18 MB ==> 5.78%Read : 18 MB ==> 5.78%Read : 19 MB ==> 5.79%Read : 19 MB ==> 5.79%Read : 19 MB ==> 5.80%Read : 20 MB ==> 5.81%Read : 20 MB ==> 5.81%Read : 21 MB ==> 5.80%Read : 21 MB ==> 5.81%Read : 22 MB ==> 5.81%Read : 22 MB ==> 5.81%Read : 23 MB ==> 5.81%Read : 23 MB ==> 5.81%Read : 24 MB ==> 5.82%Read : 24 MB ==> 5.82%Read : 24 MB ==> 5.82%Read : 25 MB ==> 5.83%Read : 25 MB ==> 5.83%Read : 25 MB ==> 5.83%Read : 26 MB ==> 5.83%Read : 26 MB ==> 5.83%Read : 27 MB ==> 5.83%Read : 27 MB ==> 5.83%Read : 28 MB ==> 5.83%Read : 28 MB ==> 5.83%Read : 29 MB ==> 5.83%Read : 29 MB ==> 5.83%Read : 30 MB ==> 5.84%Read : 30 MB ==> 5.84%Read : 31 MB ==> 5.84%Read : 31 MB ==> 5.85%Read : 31 MB ==> 5.85%Read : 32 MB ==> 5.85%Read : 32 MB ==> 5.86%Read : 32 MB ==> 5.86%Read : 33 MB ==> 5.86%Read : 33 MB ==> 5.86%Read : 34 MB ==> 5.86%Read : 34 MB ==> 5.86%Read : 34 MB ==> 5.86%Read : 35 MB ==> 5.86%Read : 35 MB ==> 5.86%Read : 36 MB ==> 5.86%Read : 36 MB ==> 5.86%Read : 37 MB ==> 5.86%Read : 37 MB ==> 5.86%Read : 38 MB ==> 5.86%Read : 38 MB ==> 5.86%Read : 39 MB ==> 5.86%Read : 39 MB ==> 5.86%Read : 40 MB ==> 5.86%Read : 40 MB ==> 5.86%Read : 41 MB ==> 5.86%Read : 41 MB ==> 5.87%Read : 42 MB ==> 5.87%Read : 42 MB ==> 5.88%Read : 43 MB ==> 5.87%Read : 43 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 46 MB ==> 5.87%Read : 46 MB ==> 5.87%Read : 47 MB ==> 5.88%Read : 47 MB ==> 5.88%Read : 47 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 51 MB ==> 5.88%Read : 51 MB ==> 5.88%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 54 MB ==> 5.89%Read : 54 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 59 MB ==> 5.89%Read : 59 MB ==> 5.89%Read : 60 MB ==> 5.89%Read : 60 MB ==> 5.89%Read : 60 MB ==> 5.89%Read : 61 MB ==> 5.89%Read : 61 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 63 MB ==> 5.89%Read : 63 MB ==> 5.90%Read : 64 MB ==> 5.90%Read : 64 MB ==> 5.90%
-                                                                               /*stdin*\            :  5.90%   (68000020 => 4011819 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g6000000000 -P99 |  ../programs/zstd -v1 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 89 MB ==> 9.42%Read : 177 MB ==> 9.41%Read : 264 MB ==> 9.41%Read : 351 MB ==> 9.42%Read : 440 MB ==> 9.42%Read : 532 MB ==> 9.42%Read : 614 MB ==> 9.42%Read : 702 MB ==> 9.42%Read : 789 MB ==> 9.42%Read : 874 MB ==> 9.42%Read : 952 MB ==> 9.42%Read : 1037 MB ==> 9.42%Read : 1126 MB ==> 9.42%Read : 1211 MB ==> 9.42%Read : 1301 MB ==> 9.42%Read : 1393 MB ==> 9.42%Read : 1481 MB ==> 9.42%Read : 1558 MB ==> 9.42%Read : 1639 MB ==> 9.42%Read : 1730 MB ==> 9.42%Read : 1811 MB ==> 9.42%Read : 1902 MB ==> 9.42%Read : 1992 MB ==> 9.42%Read : 2080 MB ==> 9.42%Read : 2168 MB ==> 9.42%Read : 2258 MB ==> 9.42%Read : 2348 MB ==> 9.42%Read : 2438 MB ==> 9.42%Read : 2529 MB ==> 9.42%Read : 2618 MB ==> 9.42%Read : 2709 MB ==> 9.42%Read : 2795 MB ==> 9.42%Read : 2880 MB ==> 9.42%Read : 2972 MB ==> 9.42%Read : 3050 MB ==> 9.42%Read : 3124 MB ==> 9.42%Read : 3207 MB ==> 9.42%Read : 3298 MB ==> 9.42%Read : 3387 MB ==> 9.42%Read : 3477 MB ==> 9.42%Read : 3568 MB ==> 9.42%Read : 3658 MB ==> 9.42%Read : 3744 MB ==> 9.42%Read : 3832 MB ==> 9.42%Read : 3920 MB ==> 9.42%Read : 4009 MB ==> 9.42%Read : 4099 MB ==> 9.42%Read : 4188 MB ==> 9.42%Read : 4278 MB ==> 9.42%Read : 4368 MB ==> 9.42%Read : 4446 MB ==> 9.42%Read : 4529 MB ==> 9.42%Read : 4613 MB ==> 9.42%Read : 4695 MB ==> 9.42%Read : 4775 MB ==> 9.42%Read : 4859 MB ==> 9.42%Read : 4943 MB ==> 9.42%Read : 5022 MB ==> 9.42%Read : 5103 MB ==> 9.42%Read : 5182 MB ==> 9.42%Read : 5267 MB ==> 9.42%Read : 5357 MB ==> 9.42%Read : 5432 MB ==> 9.42%Read : 5529 MB ==> 9.42%Read : 5627 MB ==> 9.42%
-                                                                               /*stdin*\            :  9.42%   (6000000000 => 564961986 bytes, /*stdout*\) 
--e fileRoundTripTest: ./datagen -g4193M -P99 > tmp &&  ../programs/zstd -v1 -c tmp |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 100 / 4193 MB ==> 9.41%Read : 184 / 4193 MB ==> 9.42%Read : 286 / 4193 MB ==> 9.41%Read : 384 / 4193 MB ==> 9.42%Read : 487 / 4193 MB ==> 9.41%Read : 589 / 4193 MB ==> 9.41%Read : 697 / 4193 MB ==> 9.42%Read : 812 / 4193 MB ==> 9.42%Read : 911 / 4193 MB ==> 9.42%Read : 1013 / 4193 MB ==> 9.42%Read : 1128 / 4193 MB ==> 9.42%Read : 1242 / 4193 MB ==> 9.42%Read : 1356 / 4193 MB ==> 9.42%Read : 1466 / 4193 MB ==> 9.42%Read : 1580 / 4193 MB ==> 9.42%Read : 1686 / 4193 MB ==> 9.42%Read : 1795 / 4193 MB ==> 9.42%Read : 1904 / 4193 MB ==> 9.42%Read : 2019 / 4193 MB ==> 9.42%Read : 2126 / 4193 MB ==> 9.42%Read : 2239 / 4193 MB ==> 9.42%Read : 2342 / 4193 MB ==> 9.42%Read : 2441 / 4193 MB ==> 9.42%Read : 2539 / 4193 MB ==> 9.42%Read : 2651 / 4193 MB ==> 9.42%Read : 2754 / 4193 MB ==> 9.42%Read : 2864 / 4193 MB ==> 9.42%Read : 2955 / 4193 MB ==> 9.42%Read : 3024 / 4193 MB ==> 9.42%Read : 3097 / 4193 MB ==> 9.42%Read : 3200 / 4193 MB ==> 9.42%Read : 3313 / 4193 MB ==> 9.42%Read : 3414 / 4193 MB ==> 9.42%Read : 3515 / 4193 MB ==> 9.42%Read : 3636 / 4193 MB ==> 9.42%Read : 3746 / 4193 MB ==> 9.42%Read : 3861 / 4193 MB ==> 9.42%Read : 3987 / 4193 MB ==> 9.42%Read : 4107 / 4193 MB ==> 9.42%                                                                               tmp                  :  9.42%   (4396679168 => 413999319 bytes, /*stdout*\) 
--e 
-**** zstdmt long round-trip tests **** 
--e roundTripTest: ./datagen -g99000000 -P99 |  ../programs/zstd -v20 -T2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-
-                                                                               /*stdin*\            :  5.90%   (99000000 => 5842431 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g6000000000 -P99 |  ../programs/zstd -v1 -T2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 84 MBRead : 182 MBRead : 264 MBRead : 348 MBRead : 437 MBRead : 524 MBRead : 612 MBRead : 702 MBRead : 794 MBRead : 886 MBRead : 979 MBRead : 1071 MBRead : 1164 MBRead : 1259 MBRead : 1358 MBRead : 1454 MBRead : 1549 MBRead : 1640 MBRead : 1734 MBRead : 1826 MBRead : 1912 MBRead : 2008 MBRead : 2105 MBRead : 2206 MBRead : 2304 MBRead : 2404 MBRead : 2504 MBRead : 2605 MBRead : 2704 MBRead : 2800 MBRead : 2898 MBRead : 3000 MBRead : 3090 MBRead : 3190 MBRead : 3290 MBRead : 3390 MBRead : 3489 MBRead : 3588 MBRead : 3684 MBRead : 3785 MBRead : 3885 MBRead : 3984 MBRead : 4076 MBRead : 4174 MBRead : 4274 MBRead : 4374 MBRead : 4475 MBRead : 4578 MBRead : 4678 MBRead : 4780 MBRead : 4882 MBRead : 4981 MBRead : 5077 MBRead : 5178 MBRead : 5281 MBRead : 5381 MBRead : 5481 MBRead : 5577 MBRead : 5678 MB
-                                                                               /*stdin*\            :  9.40%   (6000000000 => 563851359 bytes, /*stdout*\) 
--e roundTripTest: ./datagen -g1500000000 -P97 |  ../programs/zstd -v1 -T999 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Read : 75 MBRead : 172 MBRead : 269 MBRead : 360 MBRead : 456 MBRead : 555 MBRead : 652 MBRead : 747 MBRead : 823 MBRead : 914 MBRead : 1009 MBRead : 1106 MBRead : 1200 MBRead : 1296 MBRead : 1392 MB
-                                                                               /*stdin*\            :  9.90%   (1500000000 => 148428678 bytes, /*stdout*\) 
--e fileRoundTripTest: ./datagen -g4195M -P98 > tmp &&  ../programs/zstd -v -T0 -c tmp |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.3.1, by Yann Collet ***
-Note: 8 physical core(s) detected 
-Read : 80 / 4195 MBRead : 164 / 4195 MBRead : 238 / 4195 MBRead : 322 / 4195 MBRead : 409 / 4195 MBRead : 476 / 4195 MBRead : 544 / 4195 MBRead : 623 / 4195 MBRead : 704 / 4195 MBRead : 775 / 4195 MBRead : 859 / 4195 MBRead : 938 / 4195 MBRead : 1020 / 4195 MBRead : 1092 / 4195 MBRead : 1156 / 4195 MBRead : 1228 / 4195 MBRead : 1311 / 4195 MBRead : 1379 / 4195 MBRead : 1456 / 4195 MBRead : 1524 / 4195 MBRead : 1600 / 4195 MBRead : 1663 / 4195 MBRead : 1728 / 4195 MBRead : 1799 / 4195 MBRead : 1844 / 4195 MBRead : 1920 / 4195 MBRead : 1991 / 4195 MBRead : 2067 / 4195 MBRead : 2138 / 4195 MBRead : 2199 / 4195 MBRead : 2272 / 4195 MBRead : 2360 / 4195 MBRead : 2440 / 4195 MBRead : 2518 / 4195 MBRead : 2600 / 4195 MBRead : 2671 / 4195 MBRead : 2740 / 4195 MBRead : 2828 / 4195 MBRead : 2896 / 4195 MBRead : 2956 / 4195 MBRead : 3016 / 4195 MBRead : 3096 / 4195 MBRead : 3186 / 4195 MBRead : 3263 / 4195 MBRead : 3336 / 4195 MBRead : 3408 / 4195 MBRead : 3484 / 4195 MBRead : 3572 / 4195 MBRead : 3652 / 4195 MBRead : 3704 / 4195 MBRead : 3784 / 4195 MBRead : 3861 / 4195 MBRead : 3936 / 4195 MBRead : 4008 / 4195 MBRead : 4084 / 4195 MBRead : 4160 / 4195 MB                                                                               tmp                  : 10.16%   (4398776320 => 446798358 bytes, /*stdout*\) 
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -DZSTD_MULTITHREAD -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls   -pthread ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../programs/datagen.c fullbench.c -o fullbench
-./fullbench -i1
-*** Zstandard speed analyzer 1.3.1 64-bits, by Yann Collet (Dec 25 2025) ***
-- 1 iterations -
-                                                                                Sample 10MiB : 
- 1- compress(1)                    :  1- compress(1)                    :   683.2 MB/s  (  3139167) 1
- 2- decompress                     :  1- decompress                     :  2532.0 MB/s  ( 10000000) 2
-11- compressContinue(1)            :  1- compressContinue(1)            :   720.0 MB/s  (  3139163)11
-12- compressContinue_extDict       :  1- compressContinue_extDict       :   782.0 MB/s  (  3139198)12
-13- decompressContinue             :  1- decompressContinue             :  2713.2 MB/s  ( 10000000)13
-31- decodeLiteralsBlock            :  1- decodeLiteralsBlock            :  5269.1 MB/s  (    36739)31
-32- decodeSeqHeaders               :  1- decodeSeqHeaders               : 92086.7 MB/s  (       74)32
-41- compressStream(1)              :  1- compressStream(1)              :   701.0 MB/s  (  3139164)41
-42- decompressStream               :  1- decompressStream               :  2918.2 MB/s  ( 10000000)42
-51- compress_generic, continue     :  1- compress_generic, continue     :   724.8 MB/s  (  3139164)51
-52- compress_generic, end          :  1- compress_generic, end          :   839.2 MB/s  (  3139163)52
-61- compress_generic, -T2, continu :  1- compress_generic, -T2, continu :  1363.8 MB/s  (  3139015)61
-62- compress_generic, -T2, end     :  1- compress_generic, -T2, end     :  1487.7 MB/s  (  3139092)62
-./fullbench -i1 -P0
-*** Zstandard speed analyzer 1.3.1 64-bits, by Yann Collet (Dec 25 2025) ***
-- 1 iterations -
-                                                                                Sample 10MiB : 
- 1- compress(1)                    :  1- compress(1)                    :  3142.4 MB/s  ( 10000241) 1
- 2- decompress                     :  1- decompress                     : 49619.7 MB/s  ( 10000000) 2
-11- compressContinue(1)            :  1- compressContinue(1)            :  2975.5 MB/s  ( 10000237)11
-12- compressContinue_extDict       :  1- compressContinue_extDict       :  2927.8 MB/s  ( 10000223)12
-13- decompressContinue             :  1- decompressContinue             : 33326.1 MB/s  ( 10000000)13
-ZSTD_decodeLiteralsBlock : impossible to test on this sample (not compressible)
-ZSTD_decodeSeqHeaders : impossible to test on this sample (not compressible)
-41- compressStream(1)              :  1- compressStream(1)              :  2808.6 MB/s  ( 10000237)41
-42- decompressStream               :  1- decompressStream               : 44140.8 MB/s  ( 10000000)42
-51- compress_generic, continue     :  1- compress_generic, continue     :  3089.9 MB/s  ( 10000237)51
-52- compress_generic, end          :  1- compress_generic, end          :  3218.7 MB/s  ( 10000237)52
-61- compress_generic, -T2, continu :  1- compress_generic, -T2, continu :  5035.4 MB/s  ( 10000237)61
-62- compress_generic, -T2, end     :  1- compress_generic, -T2, end     :  5846.0 MB/s  ( 10000237)62
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -DZSTD_MULTITHREAD -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1  -pthread ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c ../programs/datagen.c fuzzer.c -o fuzzer
-../lib/dictBuilder/cover.c: In function ‘COVER_buildDictionary’:
-../lib/dictBuilder/cover.c:615:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-  615 |   const U32 epochSize = (U32)(ctx->suffixSize / epochs);
-      |   ^~~~~
-./fuzzer -T5mn 
-Starting zstd tester (64-bits, 1.3.1)
-Seed = 6940
-     1              25              47              73              90             112             132             157             168             201             217             258             281             282             302             306             333             340             343             359             366             379             389             393             402             432             442             447             466             496             510             527             555             583             598             610             643             657             659             667             702             708             714             742             756             775             781             791             806             824             841             852             879             900             913             918             924             941             955             975             982            1008            1021            1031            1037            1049            1063            1097            1112            1118            1130            1142            1154            1159            1168            1185            1203            1207            1216            1227            1238            1240            1248            1251            1254            1262            1264            1271            1279            1287            1302            1316            1332            1342            1353            1362            1380            1386            1415            1431            1450            1461            1465            1479            1486            1495            1501            1524            1555            1580            1593            1605            1614            1633            1651            1665            1708            1711            1734            1760            1780            1802            1815            1834            1844            1866            1893            1903            1919            1926            1931            1939            1959            1974            1999            2015            2027            2039            2054            2064            2066            2067            2094            2111            2133            2142            2149            2164            2180            2203            2229            2242            2261            2265            2289            2315            2333            2339            2349            2356            2374            2396            2404            2423            2426            2446            2447            2467            2469            2485            2495            2497            2508            2533            2537            2538            2545            2553            2559            2577            2589            2602            2630            2656            2660            2694            2718            2737            2760            2775            2782            2804            2813            2827            2846            2865            2871            2886            2903            2914            2935            2947            2967            2976            2996            2997            3022            3027            3029            3039            3054            3068            3073            3086            3094            3115            3117            3128            3140            3151            3162            3164            3165            3189            3200            3209            3223            3238            3266            3272            3310            3324            3338            3350            3358            3365            3384            3404            3411            3427            3436            3447            3456            3462            3483            3489            3497            3504            3530            3542            3554            3565            3579            3586            3598            3609            3621            3642            3666            3693            3705            3716            3728            3742            3757            3782            3805            3815            3831            3841            3857            3875            3908            3916            3937            3945            3972            3982            3986            3989            4003            4030            4038            4054            4055            4069            4092            4110            4135            4152            4173            4180            4193            4200            4209            4238            4255            4269            4286            4307            4320            4339            4344            4349            4358            4368            4383            4401            4411            4433            4462            4468            4484            4486            4488            4516            4527            4544            4562            4586            4608            4620            4640            4658            4680            4693            4720            4730            4757            4786            4801            4815            4829            4843            4884            4900            4905            4927            4938            4951            4971            4996            5003            5016            5023            5029            5043            5054            5075            5090            5129            5162            5170            5175            5190            5221            5231            5240            5248            5267            5286            5287            5312            5337            5339            5341            5351            5367            5383            5414            5428            5450            5453            5463            5479            5488            5496            5524            5538            5542            5560            5587            5616            5637            5658            5667            5680            5681            5684            5699            5714            5732            5741            5784            5798            5810            5821            5833            5854            5871            5876            5903            5921            5931            5961            5962            6000            6006            6041            6048            6070            6088            6103            6131            6145            6159            6164            6182            6192            6194            6203            6208            6227            6234            6236            6252            6271            6280            6293            6307            6317            6347            6382            6392            6406            6425            6431            6467            6473            6490            6493            6500            6502            6506            6511            6525            6528            6554            6576            6586            6604            6635            6654            6658            6670            6692            6693            6704            6712            6729            6742            6750            6759            6781            6788            6792            6796            6811            6829            6840            6849            6857            6868            6879            6891            6917            6925            6927            6940            6961            6974            6983            6996            7004            7009            7031            7040            7058            7069            7083            7102            7104            7120            7133            7144            7149            7172            7187            7211            7217            7222            7244            7257            7264            7267            7281            7295            7302            7334            7341            7361            7368            7385            7386            7393            7437            7452            7464            7466            7475            7479            7481            7496            7515            7525            7547            7570            7613            7618            7620            7632            7650            7669            7685            7690            7702            7710            7734            7748            7762            7770            7801            7818            7848            7895            7907            7922            7939            7960            7966            7991            8014            8027            8060            8067            8075            8090            8102            8123            8138            8142            8145            8161            8172            8190            8202            8213            8218            8224            8239            8246            8255            8267            8280            8294            8318            8324            8341            8368            8382            8387            8397            8401            8413            8419            8430            8446            8458            8483            8491            8492            8517            8528            8530            8532            8535            8543            8550            8572            8616            8618            8639            8653            8662            8667            8693            8714            8722            8743            8750            8758            8772            8783            8809            8820            8825            8843            8857            8876            8887            8903            8914            8925            8933            8947            8950            8951            8963            8982            8996            9033            9042            9053            9062            9083            9094            9108            9114            9124            9145            9161            9175            9176            9198            9211            9224            9248            9254            9283            9298            9331            9339            9347            9362            9385            9437            9444            9468            9492            9503            9523            9544            9564            9586            9601            9622            9623            9629            9648            9658            9669            9692            9725            9753            9771            9788            9815            9829            9831            9849            9862            9877            9889            9891            9910            9941            9956            9977           10008           10034           10050           10058           10079           10080           10106           10134           10145           10176           10205           10232           10246           10262           10285           10312           10327           10346           10357           10366           10402           10411           10435           10449           10462           10475           10487           10517           10539           10556           10586           10598           10603           10629           10656           10663           10685           10699           10721           10733           10753           10770           10791           10813           10841           10848           10855           10871           10891           10921           10933           10941           10963           10964           10970           10987           10992           11008           11025           11048           11057           11065           11083           11104           11119           11121           11132           11137           11167           11184           11212           11220           11229           11252           11268           11284           11294           11315           11332           11337           11353           11364           11389           11408           11413           11433           11466           11474           11477           11483           11490           11498           11509           11525           11551           11576           11582           11587           11619           11639           11658           11671           11702           11714           11729           11749           11760           11789           11807           11818           11839           11850           11852           11872           11889           11899           11916           11945           11952           11959           11979           12001           12011           12044           12051           12068           12086           12106           12131           12154           12169           12195           12204           12230           12245           12258           12268           12271           12279           12292           12321           12340           12373           12397           12417           12432           12447           12457           12475           12483           12493           12519           12525           12540           12547           12571           12588           12636           12663           12674           12697           12728           12730           12741           12765           12772           12787           12799           12825           12831           12847           12856           12890           12893           12899           12914           12929           12939           12970           12990           12992           12995           13037           13052           13058           13078           13086           13111           13121           13132           13134           13164           13172           13173           13175           13192           13206           13217           13231           13245           13264           13270           13294           13310           13321           13329           13332           13348           13379           13412           13421           13427           13429           13445           13447           13460           13479           13488           13517           13526           13528           13547           13565           13570           13571           13582           13593           13610           13619           13629           13649           13667           13683           13713           13737           13753           13763           13779           13790           13806           13827           13838           13858           13871           13884           13901           13917           13929           13943           13966           13977           14001           14007           14018           14040           14056           14059           14096           14109           14122           14143           14159           14180           14201           14209           14225           14230           14242           14282           14298           14328           14350           14356           14363           14373           14378           14403           14406           14421           14425           14455           14479           14498           14524           14536           14559           14578           14592           14628           14657           14664           14674           14709           14723           14739           14756           14771           14784           14790           14798           14808           14822           14830           14840           14852           14869           14880           14895           14923           14929           14934           14963           14980           14994           15008           15015           15023           15032           15045           15054           15060           15081           15100           15114           15126           15141           15154           15165           15169           15173           15180           15189           15191           15196           15209           15232           15245           15254           15284           15292           15296           15303           15315           15329           15349           15353           15375           15401           15407           15417           15447           15473           15486           15500           15504           15521           15540           15570           15599           15612           15622           15649           15669           15684           15699           15725           15736           15738           15757           15758           15784           15793           15814           15845           15854           15871           15893           15910           15937           15959           15963           15974           15980           15995           16023           16056           16065           16078           16112           16131           16133           16154           16168           16182           16204           16223           16245           16279           16300           16306           16333           16359           16370           16384           16399           16422           16437           16462           16485           16497           16534           16547           16563           16575           16591           16615           16639           16669           16673           16685           16703           16731           16740           16757           16787           16799           16816           16837           16854           16858           16889           16917           16935           16953           16956           16974           16980           17010           17028           17036           17047           17064           17081           17115           17128           17159           17176           17189           17221           17226           17235           17250           17278           17300           17313           17335           17383           17415           17426           17450           17469           17493           17495           17516           17556           17569           17585           17592           17632           17664           17678           17707           17730           17747           17776           17789           17799           17801           17826           17834           17864           17869           17880           17882           17895           17927           17930           17954           17966           17983           18007           18028           18032           18047           18065           18070           18082           18100           18131           18147           18162           18183           18190           18193           18211           18214           18232           18243           18269           18289           18308           18318           18349           18356           18361           18392           18404           18423           18449           18466           18477           18487           18509           18525           18537           18556           18579           18608           18624           18633           18647           18662           18675           18679           18687           18693           18719           18725           18728           18752           18771           18774           18781           18789           18795           18810           18811           18841           18853           18890           18900           18917           18928           18934           18956           18965           18972           18989           19010           19014           19020           19037           19056           19078          19081 fuzzer tests completed   
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -DZSTD_MULTITHREAD -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1  -pthread ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c ../programs/datagen.c zstreamtest.c -o zstreamtest
-../lib/dictBuilder/cover.c: In function ‘COVER_buildDictionary’:
-../lib/dictBuilder/cover.c:615:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-  615 |   const U32 epochSize = (U32)(ctx->suffixSize / epochs);
-      |   ^~~~~
-./zstreamtest -T2mn 
-Starting zstream tester (64-bits, 1.3.1)
-Seed = 9202
-     1/     1        28              60              67              87             142             150             180             237             240             253             292             339             371             387             421             422             460             468             469             496             511             524             536             557             596             615             627             648             677             700             714             757             778             782             862             900             929             930             979            1038            1046            1059            1102            1109            1131            1157            1193            1229            1243            1261            1283            1303            1337            1345            1358            1359            1416            1454            1508            1522            1523            1535            1617            1646            1688            1695            1697            1732            1774            1855            1892            1909            1912            1956            1963            1997            2067            2098            2136            2146            2170            2191            2233            2249            2251            2309            2331            2345            2401            2433            2467            2488            2516            2617            2625            2658            2707            2729            2742            2757            2813            2857            2859            2896            2905            2908            2913            2942            2994            3059            3100            3110            3175            3199            3209            3215            3228            3243            3245            3270            3281            3309            3317            3332            3373            3425            3439            3462            3501            3510            3540            3574            3607            3650            3668            3692            3733            3734            3759            3784            3788            3807            3811            3838            3864            3908            3935            3947            3950            3967            4001            4013            4017            4041            4065            4113            4117            4173            4231            4239            4264            4265            4315            4345            4353            4392            4403            4440            4454            4483            4499            4528            4541            4553            4572            4629            4631            4647            4671            4683            4718            4721            4768            4779            4782            4786            4791            4828            4848            4867            4876            4890            4896            4919            4943            4952            5018            5038            5060            5094            5124            5222            5230            5242            5289            5295            5322            5351            5355            5369            5396            5405            5413            5432            5449            5486            5508            5516            5544            5576            5577            5613            5656            5677            5722            5723            5774            5818            5826            5849            5873            5896            5932            5963            5974            6018            6062            6064            6067            6068            6069            6109            6149            6206            6215            6228            6249            6276            6286            6303            6362            6428            6480            6601            6615            6666            6681            6721            6777            6813            6852            6917            6939            6959            6971            6978            7010            7031            7047            7086            7130            7186            7266            7278            7290            7299            7315            7339            7388            7427            7475            7494            7505            7537            7547            7568            7612            7630            7652            7702            7709            7766            7772            7817            7819            7850            7895            7933            7953            7958            7996            8021            8027            8107            8143            8154            8198            8209            8217            8248            8251            8284            8311            8354            8388            8469            8497            8511            8544            8558            8625            8658            8716            8730            8781            8814            8819            8835            8876            8922            8966            9012            9026            9043            9047            9062            9069            9104            9136            9211            9262            9308            9394            9424            9460            9477            9512            9523            9527            9549            9550            9572            9573            9575            9580            9598            9611            9626            9644            9656            9674            9687            9720            9729            9747            9752            9785            9802            9864            9903            9954            9976           10003           10031           10033           10060           10067           10128           10145           10190           10195           10215           10279           10301           10303           10309           10323           10326           10340          10358 fuzzer tests completed   
-./zstreamtest --mt -T2mn 
-Starting zstream tester (64-bits, 1.3.1)
-Seed = 6411
-     1/     1         3              11              20              38              88             138             220             224             237             249             253             294             305             319             344             364             387             393             434             439             448             472             485             527             556             561             584             595             623             647             677             706             724             760             766             817             821             832             857             878             926             971            1004            1008            1036            1049            1085            1101            1120            1160            1173            1190            1228            1269            1288            1294            1310            1315            1335            1365            1366            1373            1388            1408            1439            1452            1497            1503            1570            1614            1638            1711            1713            1726            1732            1761            1767            1778            1840            1859            1863            1907            1917            1927            1939            1958            1997            2038            2057            2072            2103            2125            2149            2178            2183            2187            2233            2264            2265            2267            2290            2319            2353            2356            2357            2375            2381            2400            2410            2426            2438            2471            2474            2488            2496            2502            2511            2525            2545            2559            2576            2639            2647            2685            2709            2724            2787            2811            2819            2832            2851            2880            2885            2918            2942            2966            2984            3019            3046            3051            3079            3130            3138            3159            3164            3194            3208            3212            3260            3337            3392            3461            3511            3521            3565            3610            3654            3661            3683            3737            3740            3772            3792            3802            3810            3850            3922            3943            3946            3995            4029            4036            4074            4103            4183            4195            4225            4239            4277            4315            4355            4363            4378            4387            4415            4435            4444            4462            4496            4499            4534            4550            4675            4694            4710            4753            4773            4801            4837            4857            4873            4883            4892            4967            4977            4998            5035            5072            5094            5139            5175            5207            5235            5245            5249            5277            5288            5297            5318            5351            5354            5418            5443            5482            5488            5503            5514            5566            5576            5590            5627            5647            5657            5681          5713 fuzzer tests completed   
-./zstreamtest --newapi -T2mn 
-Starting zstream tester (64-bits, 1.3.1)
-Seed = 3092
-     1/     1        12              69             142             167             193             250             317             362             372             419             450             464             474             517             568             570             612             685             716             818             822             893             931             932             997            1040            1061            1135            1184            1236            1273            1296            1347            1398            1452            1470            1542            1557            1583            1591            1635            1636            1640            1696            1718            1745            1777            1828            1917            1918            1947            1991            2005            2019            2057            2089            2116            2149            2248            2295            2309            2349            2415            2424            2465            2469            2553            2588            2609            2627            2681            2716            2753            2780            2864            2874            2936            2983            3019            3068            3102            3108            3130            3131            3151            3204            3268            3299            3367            3401            3447            3476            3491            3529            3584            3644            3695            3735            3790            3804            3831            3872            3879            3889            3980            3988            4016            4042            4081            4133            4150            4187            4235            4259            4308            4357            4362            4430            4445            4460            4533            4589            4641            4671            4730            4763            4775            4804            4851            4883            4948            4966            5017            5023            5048            5097            5135            5166            5213            5242            5272            5332            5419            5513            5578            5606            5657            5684            5707            5760            5800            5824            5884            5911            5938            5951            5998            6016            6029            6108            6168            6261            6308            6316            6317            6318            6330            6332            6359            6385            6410            6460            6464            6479            6520            6626            6690            6725            6767            6805            6825            6865            6941            6986            6991            7060            7124            7172            7202            7254            7257            7303            7313            7378            7408            7441            7463            7464            7542            7550            7551            7614            7646            7680            7713            7789            7803            7817            7826            7868            7956            8004            8056            8093            8103            8183            8196            8221            8260            8274            8298            8362            8433            8452            8531            8566            8606            8632            8710            8756            8779            8841            8846            8855            8915            8962            9025            9049            9086            9155            9178            9190            9191            9247            9260            9326            9333            9364            9446            9497            9534            9570            9614            9686            9737            9783            9802            9840            9867            9894            9959           10004           10029           10039           10055           10148           10156           10160           10198           10252           10293           10322           10367           10368           10369           10382           10425           10464           10480           10544           10579           10624           10648           10659           10660           10671           10689           10771           10848           10919           10928           10971           10990           11016           11021           11101           11108           11133           11219           11250           11281           11289           11345           11364           11392           11455           11493           11525           11542           11574           11671           11737           11787           11852           11889           11926           12030           12064           12092           12107           12162           12214           12215           12311           12320           12326           12343           12378           12390           12398           12416           12417           12449           12477           12488           12514           12526           12602           12659           12689           12737           12768           12792           12815           12898           12947           13004           13009           13027           13082           13119           13177           13254           13317           13353           13388           13398           13421           13440           13479           13512           13553           13622           13690           13703           13714           13752           13766           13812           13822           13877           13903           13928           14015           14026           14034           14035           14090           14109           14168           14198           14237           14273           14298           14339           14380           14392           14462           14482           14527           14573           14638           14661           14667           14684           14704           14730           14744           14749           14769           14776           14809           14841           14893           14947           14950           14967           15039           15064           15143           15174           15232           15239           15297           15340           15453           15468           15485           15515           15576           15636           15647           15657           15687           15713           15736           15762           15822           15859           15875           15922           15953           15980           16119           16238           16282           16283           16300           16350           16383           16418           16449           16489           16494           16590           16601           16651           16699           16740           16773           16851           16888           16927           16954           16969           16993           17043           17061           17101           17129           17162           17203           17254           17313           17327           17382           17423           17498           17532           17554           17570           17598           17692           17727           17791           17835           17906           17946           18014           18054           18099           18121           18150           18167           18168           18188           18220           18252           18310           18362           18438           18485           18486           18522           18529           18601           18654           18694           18698           18743           18766           18804           18858           18895           18953           18988           19044           19057           19105           19121           19135           19160           19170           19224           19278           19291           19313           19344           19352          19354 fuzzer tests completed   
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c invalidDictionaries.c -o invalidDictionaries
-./invalidDictionaries
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1  -DZSTD_LEGACY_SUPPORT=4  ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/legacy/zstd_v05.c ../lib/legacy/zstd_v07.c ../lib/legacy/zstd_v03.c ../lib/legacy/zstd_v06.c ../lib/legacy/zstd_v01.c ../lib/legacy/zstd_v04.c ../lib/legacy/zstd_v02.c legacy.c -o legacy
-../lib/legacy/zstd_v03.c: In function ‘BIT_initDStream’:
-../lib/legacy/zstd_v03.c:414:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  414 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:415:13: note: here
-  415 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v03.c:415:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  415 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:416:13: note: here
-  416 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v03.c:416:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  416 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:417:13: note: here
-  417 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v03.c:417:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  417 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:418:13: note: here
-  418 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v03.c:418:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  418 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:419:13: note: here
-  419 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v01.c: In function ‘FSE_initDStream’:
-../lib/legacy/zstd_v01.c:669:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  669 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:670:13: note: here
-  670 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v01.c:670:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  670 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:671:13: note: here
-  671 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v01.c:671:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  671 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:672:13: note: here
-  672 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v01.c:672:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  672 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:673:13: note: here
-  673 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v01.c:673:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  673 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:674:13: note: here
-  674 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v02.c: In function ‘BIT_initDStream’:
-../lib/legacy/zstd_v02.c:412:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  412 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:413:13: note: here
-  413 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v02.c:413:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  413 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:414:13: note: here
-  414 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v02.c:414:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  414 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:415:13: note: here
-  415 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v02.c:415:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  415 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:416:13: note: here
-  416 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v02.c:416:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  416 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:417:13: note: here
-  417 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-./legacy
-Simple API OK
-Streaming API OK
-OK
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c decodecorpus.c -o decodecorpus -lm
-../lib/dictBuilder/cover.c: In function ‘COVER_buildDictionary’:
-../lib/dictBuilder/cover.c:615:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-  615 |   const U32 epochSize = (U32)(ctx->suffixSize / epochs);
-      |   ^~~~~
-./decodecorpus -t -T30
-seed: 48360
-23           46           70           92           115           144           170           191           211           234           257           277           301           333           362           387           411           439           467           499           527           555           587           619           647           675           705           732           754           784           814           842           869           892           912           943           968           996           1018           1045           1077           1101           1125           1155           1177           1200           1224           1249           1274           1301           1325           1357           1389           1415           1438           1462           1490           1513           1536           1561           1592           1613           1635           1660           1687           1715           1743           1769           1802           1831           1857           1880           1905           1929           1946           1967           1987           2010           2029           2050           2077           2094           2114           2139           2162           2179           2200           2221           2239           2257           2280           2297           2316           2341           2362           2382           2408           2424           2447           2470           2492           2511           2536           2562           2580           2601           2625           2657           2679           2699           2724           2746           2772           2796           2817           2836           2864           2887           2906           2922           2947           2971           2987           3006           3027           3052           3079           3098           3122           3146           3165           3187           3209           3229           3248           3267           3290           3311           3331           3353           3375           3392           3418           3439           3461           3481           3502           3521           3548           3568           3586           3609           3628           3658           3677           3702           3726           3744           3765           3789           3813           3832           3854           3875           3892           3914           3935           3959           3981           3999           4015           4042           4064           4085           4106 tests completed: OK
-cc    -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -g -DZSTD_DEBUG=1   -DZSTD_MULTITHREAD -pthread poolTests.c ../lib/common/pool.c ../lib/common/threading.c -o poolTests
-./poolTests
-PASS: testOrder
-PASS: testInvalid
-make[1]: Leaving directory '/home/zstd/tests'

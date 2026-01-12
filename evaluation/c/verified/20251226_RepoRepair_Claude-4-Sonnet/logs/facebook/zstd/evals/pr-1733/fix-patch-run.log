@@ -1,513 +1,0 @@
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
-Get:3 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [33.1 kB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Get:5 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1308 kB]
-Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Get:7 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [4432 kB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [4801 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:11 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [4998 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [36.8 kB]
-Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
-Fetched 35.7 MB in 25s (1454 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-3 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-patch is already the newest version (2.7.6-6).
-patch set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-make[1]: Entering directory '/home/zstd/lib'
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/debug.o common/debug.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/entropy_common.o common/entropy_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/error_private.o common/error_private.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/fse_decompress.o common/fse_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/pool.o common/pool.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/threading.o common/threading.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/xxhash.o common/xxhash.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o common/zstd_common.o common/zstd_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/fse_compress.o compress/fse_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/hist.o compress/hist.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/huf_compress.o compress/huf_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_compress.o compress/zstd_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_compress_literals.o compress/zstd_compress_literals.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_compress_sequences.o compress/zstd_compress_sequences.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_double_fast.o compress/zstd_double_fast.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_fast.o compress/zstd_fast.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_lazy.o compress/zstd_lazy.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_ldm.o compress/zstd_ldm.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstd_opt.o compress/zstd_opt.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o compress/zstdmt_compress.o compress/zstdmt_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o decompress/huf_decompress.o decompress/huf_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o decompress/zstd_ddict.o decompress/zstd_ddict.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o decompress/zstd_decompress.o decompress/zstd_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o decompress/zstd_decompress_block.o decompress/zstd_decompress_block.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o deprecated/zbuff_common.o deprecated/zbuff_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o deprecated/zbuff_compress.o deprecated/zbuff_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o deprecated/zbuff_decompress.o deprecated/zbuff_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o dictBuilder/cover.o dictBuilder/cover.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o dictBuilder/divsufsort.o dictBuilder/divsufsort.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o dictBuilder/fastcover.o dictBuilder/fastcover.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o dictBuilder/zdict.o dictBuilder/zdict.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o legacy/zstd_v05.o legacy/zstd_v05.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o legacy/zstd_v06.o legacy/zstd_v06.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=5  -c -o legacy/zstd_v07.o legacy/zstd_v07.c
-compiling static library
-compiling dynamic library 1.4.3
-creating versioned links
-make[1]: Leaving directory '/home/zstd/lib'
-make[1]: Entering directory '/home/zstd/programs'
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o zstdcli.o zstdcli.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o util.o util.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o timefn.o timefn.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o fileio.o fileio.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o benchfn.o benchfn.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o benchzstd.o benchzstd.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o datagen.o datagen.c
-cc -O3 -DBACKTRACE_ENABLE=0  -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5  -c -o dibio.o dibio.c
-==> building with threading support
-==> building zstd with .gz compression support
-==> no liblzma, building zstd without .xz/.lzma support
-==> no liblz4, building zstd without .lz4 support
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -DZSTD_MULTITHREAD -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS   -DZSTD_LEGACY_SUPPORT=5 -O3 -DBACKTRACE_ENABLE=0  -pthread -lz    ../lib/common/debug.c ../lib/common/entropy_common.c ../lib/common/error_private.c ../lib/common/fse_decompress.c ../lib/common/pool.c ../lib/common/threading.c ../lib/common/xxhash.c ../lib/common/zstd_common.c ../lib/compress/fse_compress.c ../lib/compress/hist.c ../lib/compress/huf_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstd_compress_literals.c ../lib/compress/zstd_compress_sequences.c ../lib/compress/zstd_double_fast.c ../lib/compress/zstd_fast.c ../lib/compress/zstd_lazy.c ../lib/compress/zstd_ldm.c ../lib/compress/zstd_opt.c ../lib/compress/zstdmt_compress.c ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_ddict.c ../lib/decompress/zstd_decompress.c ../lib/decompress/zstd_decompress_block.c ../lib/dictBuilder/cover.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/fastcover.c ../lib/dictBuilder/zdict.c ../lib/legacy/zstd_v05.c ../lib/legacy/zstd_v06.c ../lib/legacy/zstd_v07.c zstdcli.o util.o timefn.o fileio.o benchfn.o benchzstd.o datagen.o dibio.o  -o zstd -pthread -lz   
-make[1]: Leaving directory '/home/zstd/programs'
-cp programs/zstd .
-MOREFLAGS="-g -DDEBUGLEVEL=1 -Werror" make -j -C programs allVariants
-make[1]: Entering directory '/home/zstd/programs'
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -Wmissing-prototypes -Wc++-compat -g -DDEBUGLEVEL=1 -Werror  -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NODECOMPRESS ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/debug.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/zstd_double_fast.c ../lib/compress/zstd_lazy.c ../lib/compress/zstd_fast.c ../lib/compress/zstd_ldm.c ../lib/compress/hist.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress_literals.c ../lib/compress/zstd_compress_sequences.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/compress/zstd_opt.c zstdcli.c util.c timefn.c fileio.c -o zstd-compress
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -Wmissing-prototypes -Wc++-compat -g -DDEBUGLEVEL=1 -Werror  -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/debug.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/decompress/zstd_decompress_block.c ../lib/decompress/zstd_ddict.c zstdcli.c util.c timefn.c fileio.c -o zstd-decompress
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -Os -s  -DZSTD_NOBENCH -DZSTD_NODICT ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/decompress/zstd_decompress_block.c ../lib/decompress/zstd_ddict.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/debug.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/zstd_double_fast.c ../lib/compress/zstd_lazy.c ../lib/compress/zstd_fast.c ../lib/compress/zstd_ldm.c ../lib/compress/hist.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress_literals.c ../lib/compress/zstd_compress_sequences.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/compress/zstd_opt.c zstdcli.c util.c timefn.c fileio.c -o zstd-small
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_ -I../lib/legacy -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -Wmissing-prototypes -Wc++-compat -g -DDEBUGLEVEL=1 -Werror  ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/decompress/zstd_decompress_block.c ../lib/decompress/zstd_ddict.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/debug.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/zstd_double_fast.c ../lib/compress/zstd_lazy.c ../lib/compress/zstd_fast.c ../lib/compress/zstd_ldm.c ../lib/compress/hist.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress_literals.c ../lib/compress/zstd_compress_sequences.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/compress/zstd_opt.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c ../lib/dictBuilder/fastcover.c zstdcli.o util.o fileio.c benchfn.o benchzstd.o timefn.o datagen.o dibio.o -o zstd-nolegacy 
-make[1]: Leaving directory '/home/zstd/programs'
-make -C tests test
-make[1]: Entering directory '/home/zstd/tests'
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wvla -Wformat=2 -Winit-self -Wfloat-equal -Wwrite-strings -Wredundant-decls -Wmissing-prototypes -g -DDEBUGLEVEL=1   ../programs/datagen.c datagencli.c -o datagen
-make -C ../programs zstd MOREFLAGS+="-g -DDEBUGLEVEL=1"
-make[2]: Entering directory '/home/zstd/programs'
-make[2]: 'zstd' is up to date.
-make[2]: Leaving directory '/home/zstd/programs'
-file ../programs/zstd
-../programs/zstd: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=dfc99bf41ef993b7155f3395424f436b091fbec6, for GNU/Linux 3.2.0, not stripped
-ZSTD=" ../programs/zstd" ./playTests.sh --test-large-data
-
-Starting playTests.sh isWindows=false ZSTD=' ../programs/zstd'
-
-===>  simple tests 
-
-test : basic compression 
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-test : basic decompression
-tmp.zst              : 0 MB...                                                                                    tmp.zst             : 65537 bytes 
-test : too large compression level => auto-fix
-Warning : compression level higher than max, reduced to 19 
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 31.54%   ( 65537 =>  20669 bytes, tmp.zst) 
-error: numeric value too large 
-test : --fast aka negative compression levels
-Read : 0 / 0 MB ==> 56%                                                                                tmp                  : 55.93%   ( 65537 =>  36656 bytes, tmp.zst) 
-Read : 0 / 0 MB ==> 56%                                                                                tmp                  : 56.31%   ( 65537 =>  36902 bytes, tmp.zst) 
-Read : 0 / 0 MB ==> 100%                                                                                tmp                  :100.02%   ( 65537 =>  65551 bytes, tmp.zst) 
-error: numeric value too large 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-test : too large numeric argument
-error: numeric value too large 
-test : set compression level with environment variable ZSTD_CLEVEL
-Read : 0 / 0 MB ==> 33%                                                                                tmp                  : 33.15%   ( 65537 =>  21726 bytes, tmp.zst) 
-Read : 0 / 0 MB ==> 62%                                                                                tmp                  : 61.55%   ( 65537 =>  40341 bytes, tmp.zst) 
-Read : 0 / 0 MB ==> 33%                                                                                tmp                  : 33.15%   ( 65537 =>  21726 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=: not a valid integer value
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=-: not a valid integer value
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=a: not a valid integer value
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=+a: not a valid integer value
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=3a7: not a valid integer value
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-Ignore environment variable setting ZSTD_CLEVEL=50000000000: numeric value too large
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-test : override ZSTD_CLEVEL with command line option
-Read : 0 / 0 MB ==> 56%                                                                                tmp                  : 56.31%   ( 65537 =>  36902 bytes, tmp.zst) 
-test : compress to stdout
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, /*stdout*\) 
-test : compress to named file
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmpCompressed) 
-test : -o must be followed by filename (must fail)
-error : command must be followed by argument 
-test : force write, correct order
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmpCompressed) 
-test : forgotten argument
-error : command must be followed by argument 
-test : implied stdout when input is stdin
-bob
-test : null-length file roundtrip
--n 
-test : ensure small file doesn't add 3-bytes null block
-
-Read : 0 / 0 MB ==> 1000%                                                                                tmp1                 :1400.00%   (     1 =>     14 bytes, /*stdout*\) 
-14
-14
-test : decompress file with wrong suffix (must fail)
-zstd: tmpCompressed: unknown suffix -- ignored 
-zstd: tmp: unknown suffix -- ignored 
-test : decompress into stdout
-tmpCompressed        : 0 MB...                                                                                    tmpCompressed       : 65537 bytes 
-tmpCompressed        : 0 MB...                                                                                    tmpCompressed       : 65537 bytes 
-test : decompress from stdin into stdout
-test : impose memory limitation (must fail)
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Window size larger than maximum : 65537 > 2048
-tmp.zst : Use --long=17 or --memory=1MB
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Window size larger than maximum : 65537 > 2048
-tmp.zst : Use --long=17 or --memory=1MB
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Window size larger than maximum : 65537 > 2048
-tmp.zst : Use --long=17 or --memory=1MB
-tmp.zst : Decoding error (36) : Frame requires too much memory for decoding 
-tmp.zst : Window size larger than maximum : 65537 > 2048
-tmp.zst : Use --long=17 or --memory=1MB
-test : overwrite protection
-zstd: tmp.zst already exists; not overwritten  
-test : force overwrite
-test : overwrite readonly file
-zstd: tmpro.zst already exists; not overwritten  
-test: --no-progress flag
-                                                                               tmpro                :425.00%   (     4 =>     17 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 4 bytes 
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-                                                                               tmpro                :425.00%   (     4 =>     17 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 4 bytes 
-test: overwrite input file (must fail)
-zstd: Refusing to open an output file which will overwrite the input file 
-zstd: Refusing to open an output file which will overwrite the input file 
-test: detect that input file does not exist
-zstd: can't stat nothere : No such file or directory -- ignored 
-test: --[no-]compress-literals
-Read : 0 / 0 MB ==> 54%                                                                                tmp                  : 54.22%   ( 65537 =>  35532 bytes, /*stdout*\) 
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 65537 bytes 
-Read : 0 /*stdin*\            : 0 MB...     / 0 MB ==> 56%                                                                                tmp                  : 55.93%   ( 65537 =>  36656 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 65537 bytes 
-Read : 0 / 0 MB ==> 39% /*stdin*\            : 0 MB...                                                                                    tmp                  : 39.32%   ( 65537 =>  25772 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 65537 bytes 
-Read : 0 / 0 MB ==> 33% /*stdin*\            : 0 MB...                                                                                    tmp                  : 32.75%   ( 65537 =>  21461 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 65537 bytes 
-Read : 0 / 0 /*stdin*\            : 0 MB...     MB ==> 34%                                                                                tmp                  : 33.85%   ( 65537 =>  22183 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 65537 bytes 
-Read : 0 / 0 /*stdin*\            : 0 MB...     MB ==> 32%                                                                                tmp                  : 31.54%   ( 65537 =>  20669 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 65537 bytes 
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     22179 (2.955),1194.1 MB/s |-tmp               :     65537 ->     22179 (2.955),1194.1 MB/s ,3724.0 MB/s -1#
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     21294 (3.078), 365.5 MB/s |-tmp               :     65537 ->     21294 (3.078), 365.5 MB/s ,3447.1 MB/s  /-tmp               :     65537 ->     21294 (3.078), 377.2 MB/s 0#
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     21457 (3.054),1220.5 MB/s |-tmp               :     65537 ->     21457 (3.054),1220.5 MB/s ,3793.8 MB/s  /-tmp               :     65537 ->     21457 (3.054),1272.6 MB/s 1#
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     36652 (1.788),1750.3 MB/s |-tmp               :     65537 ->     36652 (1.788),1750.3 MB/s ,9702.1 MB/s -1#
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     34517 (1.899), 403.0 MB/s |-tmp               :     65537 ->     34517 (1.899), 403.0 MB/s ,8443.3 MB/s  0#
-Loading tmp...                                                                              |-tmp               :     65537 -> |-tmp               :     65537 ->     35528 (1.845),1863.8 MB/s |-tmp               :     65537 ->     35528 (1.845),1863.8 MB/s ,10813.5 MB/s  1#
-test : file removal
-Read : 0 / 0 MB ==> 32%                                                                                tmp                  : 32.50%   ( 65537 =>  21298 bytes, tmp.zst) 
-tmp.zst              : 0 MB...                                                                                    tmp.zst             : 65537 bytes 
-test : should quietly not remove non-regular file
-Read : 0 / 0 MB ==> 250%                                                                                tmp                  :316.67%   (     6 =>     19 bytes, /dev/zero) 
-Read : 0 / 0 MB ==> 250%                                                                                tmp                  :316.67%   (     6 =>     19 bytes, /dev/null) 
-test : --rm on stdin
-zstd: can't stat tmp : No such file or directory -- ignored 
-test : -d -f do not delete destination when source is not present
-zstd: can't stat tmp.zst : No such file or directory -- ignored 
-test : -f do not delete destination when source is not present
-zstd: can't stat tmp : No such file or directory -- ignored 
-test : compress multiple files
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 12 bytes 
-hello
-world
-zstd: tmpexists already exists; not overwritten  
-
-===>  Advanced compression parameters 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-zstd: error 11 : Parameter is out of bound 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.00% 
-                                                                               /*stdin*\            : 32.61%   (524288 => 170995 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=mml=3,tlen=48,strat=6 |  ../programs/zstd -d --zstd=mml=3,tlen=48,strat=6
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.00% 
-                                                                               /*stdin*\            : 34.55%   (524288 => 181141 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=strat=6,wlog=23,clog=23,hlog=22,slog=6 |  ../programs/zstd -d --zstd=strat=6,wlog=23,clog=23,hlog=22,slog=6
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.00% 
-                                                                               /*stdin*\            : 32.42%   (524288 => 169986 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=windowLog=23,chainLog=23,hashLog=22,searchLog=6,minMatch=3,targetLength=48,strategy=6 |  ../programs/zstd -d --zstd=windowLog=23,chainLog=23,hashLog=22,searchLog=6,minMatch=3,targetLength=48,strategy=6
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.00% 
-                                                                               /*stdin*\            : 34.46%   (524288 => 180685 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --single-thread --long --zstd=ldmHashLog=20,ldmMinMatch=64,ldmBucketSizeLog=1,ldmHashRateLog=7 |  ../programs/zstd -d --single-thread --long --zstd=ldmHashLog=20,ldmMinMatch=64,ldmBucketSizeLog=1,ldmHashRateLog=7
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 31.67% 
-                                                                               /*stdin*\            : 32.36%   (524288 => 169658 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --single-thread --long --zstd=lhlog=20,lmml=64,lblog=1,lhrlog=7 |  ../programs/zstd -d --single-thread --long --zstd=lhlog=20,lmml=64,lblog=1,lhrlog=7
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 31.67% 
-                                                                               /*stdin*\            : 32.36%   (524288 => 169658 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g64K  |  ../programs/zstd -v19 --zstd=strat=9 |  ../programs/zstd -d19 --zstd=strat=9
-
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L19) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.00%                                                                                /*stdin*\            : 31.54%   ( 65536 =>  20668 bytes, /*stdout*\) 
-
-===>  Pass-Through mode 
-Hello world 1!
-Hello world 2!
-Hello world 3!
-
-===>  frame concatenation 
-Read : 0 / 0 MB ==> 229%                                                                                hello.tmp            :285.71%   (     7 =>     20 bytes, /*stdout*\) 
-Read : 0 / 0 MB ==> 229%                                                                                world.tmp            :285.71%   (     7 =>     20 bytes, /*stdout*\) 
-helloworld.zstd      : 0 MB...                                                                                    helloworld.zstd     : 14 bytes 
-hello 
-world!
-frame concatenation without checksum
-Read : 0 / 0 MB ==> 229%                                                                                hello.tmp            :228.57%   (     7 =>     16 bytes, /*stdout*\) 
-Read : 0 / 0 MB ==> 229%                                                                                world.tmp            :228.57%   (     7 =>     16 bytes, /*stdout*\) 
-helloworld.zstd      : 0 MB...                                                                                    helloworld.zstd     : 14 bytes 
-testing zstdcat symlink
-testing zcat symlink
-frame concatenation tests completed
-
-**** flush write error test **** 
-println foo |  ../programs/zstd > /dev/full
-zstd: /*stdout*\: No space left on device 
-println foo |  ../programs/zstd |  ../programs/zstd -d > /dev/full
-zstd: /*stdout*\: No space left on device 
-
-===>  symbolic link test 
-Warning : world.tmp is a symbolic link, ignoring
-Read : 0 / 0 MB ==> 175%                                                                                hello.tmp            :208.33%   (    12 =>     25 bytes, hello.tmp.zst) 
-Warning : world.tmp is a symbolic link, ignoring
-Warning : world.tmp is a symbolic link, ignoring
-Warning : world2.tmp is a symbolic link, ignoring
-
-===>  test sparse file support 
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-Read : 0 / 5 MB ==>  0%                                                                                tmpSparse            :  0.01%   (5242880 =>    543 bytes, /*stdout*\) 
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpSparseRegen are identical
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-Read : 0 / 5 MB ==>  0%                                                                                tmpSparse            :  0.01%   (5242880 =>    543 bytes, /*stdout*\) 
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutSparse are identical
-Read : 0 / 5 MB ==>  0% *** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    543 bytes, /*stdout*\) 
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutNoSparse are identical
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpSparse
- 168 -rw------- 1 root root 5242880 Dec 25 10:17 tmpSparseRegen
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-
-/*stdin*\            : 0 MB...                                                                                    /*stdin*\           : 1200007 bytes 
-
-Files - and tmpSparseOdd are identical
-44 -rw-r--r-- 1 root root 1200007 Dec 25 10:17 tmpSparseOdd
-
- Sparse Compatibility with Console :
-Hello World 1 !
-Hello World 2 !
-
- Sparse Compatibility with Append :
-
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-(L3) Buffered :   0 MB - Consumed :   0 MB - Compressed :   0 MB => 0.02%                                                                                tmpSparse1M          :  0.01%   (1048576 =>    115 bytes, tmpSparseCompressed) 
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-tmpSparseCompressed  : 0 MB...                                                                                    tmpSparseCompressed : 1048576 bytes 
-*** zstd command line interface 64-bits v1.4.3, by Yann Collet ***
-tmpSparseCompressed  : 0 MB...                                                                                    tmpSparseCompressed : 1048576 bytes 
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpSparse
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:17 tmpSparse1M
-2048 -rw-r--r-- 1 root root 2097152 Dec 25 10:17 tmpSparse2M
-   4 -rw-r--r-- 1 root root     115 Dec 25 10:17 tmpSparseCompressed
-  44 -rw-r--r-- 1 root root 1200007 Dec 25 10:17 tmpSparseOdd
- 168 -rw------- 1 root root 5242880 Dec 25 10:17 tmpSparseRegen
-1036 -rw-r--r-- 1 root root 2097152 Dec 25 10:17 tmpSparseRegenerated
-
-===>  multiple files tests 
-compress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:17 tmp1
-  24 -rw-r--r-- 1 root root   21666 Dec 25 10:17 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:17 tmp2
-  36 -rw-r--r-- 1 root root   32834 Dec 25 10:17 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:17 tmp3
- 336 -rw-r--r-- 1 root root  343380 Dec 25 10:17 tmp3.zst
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutSparse.zst
-decompress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:17 tmp1
-  24 -rw-r--r-- 1 root root   21666 Dec 25 10:17 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:17 tmp2
-  36 -rw-r--r-- 1 root root   32834 Dec 25 10:17 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:17 tmp3
- 336 -rw-r--r-- 1 root root  343380 Dec 25 10:17 tmp3.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutSparse.zst
-compress tmp* into stdout > tmpall : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:17 tmp1
-  24 -rw-r--r-- 1 root root   21666 Dec 25 10:17 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:17 tmp2
-  36 -rw-r--r-- 1 root root   32834 Dec 25 10:17 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:17 tmp3
- 336 -rw-r--r-- 1 root root  343380 Dec 25 10:17 tmp3.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutSparse.zst
- 392 -rw-r--r-- 1 root root  397880 Dec 25 10:17 tmpall
-decompress tmpall* into stdout > tmpdec : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:17 tmp1
-  24 -rw-r--r-- 1 root root   21666 Dec 25 10:17 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:17 tmp2
-  36 -rw-r--r-- 1 root root   32834 Dec 25 10:17 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:17 tmp3
- 336 -rw-r--r-- 1 root root  343380 Dec 25 10:17 tmp3.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:17 tmpOutSparse
-   4 -rw-r--r-- 1 root root     543 Dec 25 10:17 tmpOutSparse.zst
- 392 -rw-r--r-- 1 root root  397880 Dec 25 10:17 tmpall
- 392 -rw-r--r-- 1 root root  397880 Dec 25 10:17 tmpall2
-2380 -rw-r--r-- 1 root root 2433026 Dec 25 10:17 tmpdec
-compress multiple files including a missing one (notHere) : 
-zstd: can't stat notHere : No such file or directory -- ignored 
-
-===>  stream-size mode
-
-test : basic file compression vs sized streaming compression
-Read : 0 / 0 MB ==> 22%                                                                                tmp                  : 21.86%   ( 11000 =>   2405 bytes, tmp.zst) 
-test : sized streaming compression and decompression
-Read : 0 / 0 MB ==> 22%                                                                                tmp                  : 21.86%   ( 11000 =>   2405 bytes, tmp.zst) 
-tmp.zst              : 0 MB...                                                                                    tmp.zst             : 11000 bytes 
-test : incorrect stream size
-Read : 0 MB ==>  0% zstd: error 11 : Src size is incorrect 
-
-===>  size-hint mode
-
-
-
-test : basic file compression vs hinted streaming compression
-Read : 0 / 0 MB ==> 22%                                                                                tmp                  : 21.86%   ( 11000 =>   2405 bytes, tmp.zst) 
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-test : hinted streaming compression and decompression
-Incorrect parameters
-Usage : 
-      zstd [args] [FILE(s)] [-o file] 
-
-FILE    : a filename 
-          with no FILE, or when FILE is - , read standard input
-Arguments : 
- -#     : # compression level (1-19, default: 3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit 
-make[1]: *** [Makefile:338: test-zstd] Error 1
-make[1]: Leaving directory '/home/zstd/tests'
-make: *** [Makefile:71: test] Error 2

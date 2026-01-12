@@ -1,2027 +1,0 @@
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
-Get:4 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [4801 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
-Get:6 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [4432 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1308 kB]
-Get:10 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [33.1 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:12 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1599 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4920 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [36.8 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [4998 kB]
-Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [55.2 kB]
-Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.6 kB]
-Fetched 35.7 MB in 26s (1374 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-3 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-patch is already the newest version (2.7.6-6).
-patch set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-make[1]: Entering directory '/home/zstd/lib'
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/entropy_common.o common/entropy_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/pool.o common/pool.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/error_private.o common/error_private.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/xxhash.o common/xxhash.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/fse_decompress.o common/fse_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/threading.o common/threading.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o common/zstd_common.o common/zstd_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/huf_compress.o compress/huf_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/fse_compress.o compress/fse_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/zstd_compress.o compress/zstd_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o compress/zstdmt_compress.o compress/zstdmt_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o decompress/huf_decompress.o decompress/huf_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o decompress/zstd_decompress.o decompress/zstd_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/divsufsort.o dictBuilder/divsufsort.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/zdict.o dictBuilder/zdict.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o dictBuilder/cover.o dictBuilder/cover.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_compress.o deprecated/zbuff_compress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_common.o deprecated/zbuff_common.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o deprecated/zbuff_decompress.o deprecated/zbuff_decompress.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v04.o legacy/zstd_v04.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v05.o legacy/zstd_v05.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v06.o legacy/zstd_v06.c
-cc -O3   -I. -I./common -DXXH_NAMESPACE=ZSTD_ -I./legacy -DZSTD_LEGACY_SUPPORT=4  -c -o legacy/zstd_v07.o legacy/zstd_v07.c
-compiling static library
-compiling dynamic library 1.1.5
-creating versioned links
-make[1]: Leaving directory '/home/zstd/lib'
-make[1]: Entering directory '/home/zstd/programs'
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4  -c -o zstdcli.o zstdcli.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4  -c -o fileio.o fileio.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4  -c -o bench.o bench.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4  -c -o datagen.o datagen.c
-cc -O3   -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4  -c -o dibio.o dibio.c
-==> building zstd with .gz compression support
-==> no liblzma, building zstd without .xz/.lzma support
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -DXXH_NAMESPACE=ZSTD_    -I../lib/legacy -DZSTD_GZCOMPRESS -DZSTD_GZDECOMPRESS -DZSTD_LEGACY_SUPPORT=4 -O3   -lz ../lib/decompress/huf_decompress.o ../lib/decompress/zstd_decompress.o ../lib/common/entropy_common.o ../lib/common/pool.o ../lib/common/error_private.o ../lib/common/xxhash.o ../lib/common/fse_decompress.o ../lib/common/threading.o ../lib/common/zstd_common.o ../lib/compress/huf_compress.o ../lib/compress/fse_compress.o ../lib/compress/zstd_compress.o ../lib/compress/zstdmt_compress.o ../lib/legacy/zstd_v04.o ../lib/legacy/zstd_v05.o ../lib/legacy/zstd_v06.o ../lib/legacy/zstd_v07.o ../lib/dictBuilder/divsufsort.o ../lib/dictBuilder/zdict.o ../lib/dictBuilder/cover.o zstdcli.o fileio.o bench.o datagen.o dibio.o  -o zstd -lz
-make[1]: Leaving directory '/home/zstd/programs'
-cp programs/zstd .
-make -C tests test
-make[1]: Entering directory '/home/zstd/tests'
-make -C ../programs zstd
-make[2]: Entering directory '/home/zstd/programs'
-make[2]: 'zstd' is up to date.
-make[2]: Leaving directory '/home/zstd/programs'
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   ../programs/datagen.c datagencli.c -o datagen
-file ../programs/zstd
-../programs/zstd: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1b9eba585e86e2dc8d02f4f83892f2ec88364614, for GNU/Linux 3.2.0, not stripped
-ZSTD=" ../programs/zstd" ./playTests.sh --test-large-data
-
-Starting playTests.sh isWindows=false ZSTD=' ../programs/zstd'
-
-**** simple tests **** 
-
-test : basic compression 
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
-test : basic decompression
-                                                                               tmp.zst             : 65537 bytes 
-test : too large compression level (must fail)
-Warning : compression level higher than max, reduced to 19 
-                                                                               tmp                  : 31.08%   ( 65537 =>  20372 bytes, tmp.zst) 
-test : compress to stdout
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, /*stdout*\) 
-test : compress to named file
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmpCompressed) 
-tmpCompressed
-test : -o must be followed by filename (must fail)
-error : command must be followed by argument 
-test : force write, correct order
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmpCompressed) 
-test : forgotten argument
-error : command must be followed by argument 
-test : implied stdout when input is stdin
-bob
-test : null-length file roundtrip
-test : decompress file with wrong suffix (must fail)
-zstd: tmpCompressed: unknown suffix -- ignored 
-zstd: tmp: unknown suffix -- ignored 
-test : decompress into stdout
-                                                                               tmpCompressed       : 65537 bytes 
-                                                                               tmpCompressed       : 65537 bytes 
-test : decompress from stdin into stdout
-test : impose memory limitation (must fail)
-Error 36 : Decoding error : Frame requires too much memory for decoding 
-Error 36 : Decoding error : Frame requires too much memory for decoding 
-Error 36 : Decoding error : Frame requires too much memory for decoding 
-Error 36 : Decoding error : Frame requires too much memory for decoding 
-test : overwrite protection
-zstd: tmp.zst already exists; not overwritten  
-test : force overwrite
-test : file removal
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
-ls: cannot access 'tmp': No such file or directory
-                                                                               tmp.zst             : 65537 bytes 
-ls: cannot access 'tmp.zst': No such file or directory
-test : --rm on stdin
-zstd: tmp is not a regular file -- ignored 
-ls: cannot access 'tmp.zst': No such file or directory
-
-**** Advanced compression parameters **** 
-Incorrect parameters
-Usage :
-      zstd [args] [FILE(s)] [-o file]
-
-FILE    : a filename
-          with no FILE, or when FILE is - , read standard input
-Arguments :
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit
-Incorrect parameters
-Usage :
-      zstd [args] [FILE(s)] [-o file]
-
-FILE    : a filename
-          with no FILE, or when FILE is - , read standard input
-Arguments :
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit
-Incorrect parameters
-Usage :
-      zstd [args] [FILE(s)] [-o file]
-
-FILE    : a filename
-          with no FILE, or when FILE is - , read standard input
-Arguments :
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit
-ls: cannot access 'tmp.zst': No such file or directory
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.53%   (524288 => 170548 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=slen=3,tlen=48,strat=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 31.10%   (524288 => 163061 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=strat=6,wlog=23,clog=23,hlog=22,slog=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.96%   (524288 => 162301 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v --zstd=windowLog=23,chainLog=23,hashLog=22,searchLog=6,searchLength=3,targetLength=48,strategy=6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.95%   (524288 => 162264 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g512K  |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.95%   (524288 => 162264 bytes, /*stdout*\) 
-
-**** Pass-Through mode **** 
-Hello world 1!
-Hello world 2!
-Hello world 3!
-
-**** frame concatenation **** 
-                                                                               hello.tmp            :285.71%   (     7 =>     20 bytes, /*stdout*\) 
-                                                                               world.tmp            :285.71%   (     7 =>     20 bytes, /*stdout*\) 
-                                                                               helloworld.zstd     : 14 bytes 
-hello 
-world!
-frame concatenation without checksum
-                                                                               hello.tmp            :228.57%   (     7 =>     16 bytes, /*stdout*\) 
-                                                                               world.tmp            :228.57%   (     7 =>     16 bytes, /*stdout*\) 
-                                                                               helloworld.zstd     : 14 bytes 
-hello 
-world!
-frame concatenation tests completed
-
-**** flush write error test **** 
-echo foo |  ../programs/zstd > /dev/full
-zstd: /*stdout*\: No space left on device 
-Error 1 : zstd: /*stdout*\: No such file or directory 
-echo foo |  ../programs/zstd |  ../programs/zstd -d > /dev/full
-Error 38 : Write error : cannot properly close /*stdout*\ 
-
-**** symbolic link test **** 
-Warning : world.tmp is a symbolic link, ignoring
-                                                                               hello.tmp            :208.33%   (    12 =>     25 bytes, hello.tmp.zst) 
-hello.tmp.zst
-ls: cannot access 'world.tmp.zst': No such file or directory
-world.tmp.zst
-
-**** test sparse file support **** 
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpSparseRegen are identical
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutSparse are identical
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparse            :  0.01%   (5242880 =>    548 bytes, /*stdout*\) 
-                                                                               /*stdin*\           : 5242880 bytes 
-Files tmpSparse and tmpOutNoSparse are identical
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpSparse
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpSparseRegen
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\           : 1200007 bytes 
-
-Files - and tmpSparseOdd are identical
-44 -rw-r--r-- 1 root root 1200007 Dec 25 10:36 tmpSparseOdd
-
- Sparse Compatibility with Console :
-Hello World 1 !
-Hello World 2 !
-
- Sparse Compatibility with Append :
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparse1M          :  0.01%   (1048576 =>    118 bytes, tmpSparseCompressed) 
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparseCompressed : 1048576 bytes 
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmpSparseCompressed : 1048576 bytes 
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpSparse
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:36 tmpSparse1M
-2048 -rw-r--r-- 1 root root 2097152 Dec 25 10:36 tmpSparse2M
-   4 -rw-r--r-- 1 root root     118 Dec 25 10:36 tmpSparseCompressed
-  44 -rw-r--r-- 1 root root 1200007 Dec 25 10:36 tmpSparseOdd
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpSparseRegen
-1036 -rw-r--r-- 1 root root 2097152 Dec 25 10:36 tmpSparseRegenerated
-
-**** multiple files tests **** 
-compress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmp1
-  24 -rw-r--r-- 1 root root   21665 Dec 25 10:36 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:36 tmp2
-  36 -rw-r--r-- 1 root root   32782 Dec 25 10:36 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:36 tmp3
- 336 -rw-r--r-- 1 root root  342366 Dec 25 10:36 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:36 tmpCompressed
-  24 -rw-r--r-- 1 root root   21276 Dec 25 10:36 tmpCompressed.zst
-5120 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutNoSparse.zst
- 168 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmpResult
-  24 -rw-r--r-- 1 root root   21254 Dec 25 10:36 tmpResult.zst
-decompress tmp* : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmp1
-  24 -rw-r--r-- 1 root root   21665 Dec 25 10:36 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:36 tmp2
-  36 -rw-r--r-- 1 root root   32782 Dec 25 10:36 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:36 tmp3
- 336 -rw-r--r-- 1 root root  342366 Dec 25 10:36 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:36 tmpCompressed
-  24 -rw-r--r-- 1 root root   21276 Dec 25 10:36 tmpCompressed.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutNoSparse.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmpResult
-  24 -rw-r--r-- 1 root root   21254 Dec 25 10:36 tmpResult.zst
-compress tmp* into stdout > tmpall : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmp1
-  24 -rw-r--r-- 1 root root   21665 Dec 25 10:36 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:36 tmp2
-  36 -rw-r--r-- 1 root root   32782 Dec 25 10:36 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:36 tmp3
- 336 -rw-r--r-- 1 root root  342366 Dec 25 10:36 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:36 tmpCompressed
-  24 -rw-r--r-- 1 root root   21276 Dec 25 10:36 tmpCompressed.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutNoSparse.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmpResult
-  24 -rw-r--r-- 1 root root   21254 Dec 25 10:36 tmpResult.zst
- 388 -rw-r--r-- 1 root root  396813 Dec 25 10:36 tmpall
-decompress tmpall* into stdout > tmpdec : 
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmp1
-  24 -rw-r--r-- 1 root root   21665 Dec 25 10:36 tmp1.zst
- 100 -rw-r--r-- 1 root root  102400 Dec 25 10:36 tmp2
-  36 -rw-r--r-- 1 root root   32782 Dec 25 10:36 tmp2.zst
-1024 -rw-r--r-- 1 root root 1048576 Dec 25 10:36 tmp3
- 336 -rw-r--r-- 1 root root  342366 Dec 25 10:36 tmp3.zst
-  24 -rw-r--r-- 1 root root   21262 Dec 25 10:36 tmpCompressed
-  24 -rw-r--r-- 1 root root   21276 Dec 25 10:36 tmpCompressed.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutNoSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutNoSparse.zst
- 172 -rw-r--r-- 1 root root 5242880 Dec 25 10:36 tmpOutSparse
-   4 -rw-r--r-- 1 root root     548 Dec 25 10:36 tmpOutSparse.zst
-  68 -rw-r--r-- 1 root root   65537 Dec 25 10:36 tmpResult
-  24 -rw-r--r-- 1 root root   21254 Dec 25 10:36 tmpResult.zst
- 388 -rw-r--r-- 1 root root  396813 Dec 25 10:36 tmpall
- 388 -rw-r--r-- 1 root root  396813 Dec 25 10:36 tmpall2
-2380 -rw-r--r-- 1 root root 2433026 Dec 25 10:36 tmpdec
-compress multiple files including a missing one (notHere) : 
-zstd: notHere is not a regular file -- ignored 
-
-**** dictionary tests **** 
-- test with raw dict (content only) 
-
-
-
-- Create first dictionary 
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 29297 into file tmpDict 
-                                                                               tmp                  : 21.87%   ( 33356 =>   7296 bytes, tmp.zst) 
-                                                                               tmp.zst             : 33356 bytes 
-- Create second (different) dictionary 
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 25 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 31232 into file tmpDictC 
-Error 36 : Decoding error : Dictionary mismatch 
-- Create dictionary with short dictID
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-                                                                      statistics ... 
-Save dictionary of size 29297 into file tmpDict1 
-tmpDict tmpDict1 differ: byte 5, line 1
-- Create dictionary with wrong dictID parameter order (must fail)
-error : command must be followed by argument 
-- Create dictionary with size limit
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Shuffling input files
-                                                                                                                                                     sorting 19 files of total size 0 MB ...
-finding patterns ... 
-minimum ratio : 4 
-
- 1820 segments found, of total size 29142 
-list 24 best segments 
-  1: 31 bytes at pos   168991, savings    5830 bytes |) */.                    case '| 
-  2: 35 bytes at pos   121232, savings    5654 bytes | decompression test */.        if (| 
-  3:137 bytes at pos   137275, savings    4014 bytes |CSrcSize = FUZ_randomLength(&lseed, maxS| 
-  4: 66 bytes at pos     7364, savings    3904 bytes |   DISPLAYLEVEL(4, "OK \n");..        DI| 
-  5: 27 bytes at pos   340918, savings    3875 bytes |, const char* srcFileName, | 
-  6: 55 bytes at pos   167456, savings    3727 bytes |; argument++; break;..                  | 
-  7:370 bytes at pos   296165, savings    3595 bytes |;.}./**. * Copyright (c) 2016-present, Y| 
-  8: 82 bytes at pos    10093, savings    3219 bytes |) goto _output_error; }.    DISPLAYLEVEL| 
-  9: 27 bytes at pos   390479, savings    3180 bytes | DISPLAY("\r%79s\r", "");. | 
- 10: 55 bytes at pos   231436, savings    3046 bytes |   }.                    break;..       | 
- 11:108 bytes at pos   319111, savings    2722 bytes | += *argument - '0';.                   | 
- 12: 94 bytes at pos   359686, savings    2655 bytes |   {   size_t const decompBytes = ress->| 
- 13: 42 bytes at pos   234428, savings    2429 bytes |  continue;.                        case| 
- 14: 46 bytes at pos    95623, savings    2079 bytes |/* Basic compression test */.    DISPLAY| 
- 15: 30 bytes at pos   315929, savings    2013 bytes |\n");.    DISPLAY( " -i#    : | 
- 16: 37 bytes at pos   332013, savings    1933 bytes |const char* dictFileName, int cLevel,| 
- 17: 90 bytes at pos    46353, savings    1901 bytes |  : display help and exit\n");.    retur| 
- 18: 70 bytes at pos   140333, savings    1887 bytes |case 'v':.                    argument++| 
- 19: 60 bytes at pos   120532, savings    1743 bytes |adjustedDstSize = MIN(cBufferSize - cSiz| 
- 20:200 bytes at pos   237581, savings    1736 bytes |Macros.*********************************| 
- 21: 25 bytes at pos   386935, savings    1653 bytes | g_cSize = ZSTD_compress(| 
- 22: 47 bytes at pos   232493, savings    1622 bytes | = 0;.                            argume| 
- 23: 37 bytes at pos    12489, savings    1609 bytes |er, ZSTD_compressBound(CNBuffSize),. | 
- 24: 84 bytes at pos     2738, savings    1579 bytes |prime1 = 2654435761U;.    static const U| 
-!  note : calculated dictionary significantly larger than requested (29142 > 4096) 
-!  consider increasing dictionary size, or produce denser dictionary (-s1) 
-!  always test dictionary efficiency on real samples 
-                                                                      statistics ... 
-Save dictionary of size 4096 into file tmpDict2 
-- Create dictionary with wrong parameter order (must fail)
-error : command must be followed by argument 
-- Compress without dictID
-                                                                               tmp                  : 21.86%   ( 33356 =>   7292 bytes, tmp.zst) 
-                                                                               tmp.zst             : 33356 bytes 
-- Compress with wrong argument order (must fail)
-error : command must be followed by argument 
-- Compress multiple files with dictionary
-dirTestDict/bench.c: OK
-dirTestDict/bench.h: OK
-dirTestDict/datagen.c: OK
-dirTestDict/datagen.h: OK
-dirTestDict/datagencli.c: OK
-dirTestDict/decodecorpus.c: OK
-dirTestDict/dibio.c: OK
-dirTestDict/dibio.h: OK
-dirTestDict/fileio.c: OK
-dirTestDict/fileio.h: OK
-dirTestDict/fullbench.c: OK
-dirTestDict/fuzzer.c: OK
-dirTestDict/invalidDictionaries.c: OK
-dirTestDict/legacy.c: OK
-dirTestDict/longmatch.c: OK
-dirTestDict/namespaceTest.c: OK
-dirTestDict/paramgrill.c: OK
-dirTestDict/platform.h: OK
-dirTestDict/pool.c: OK
-dirTestDict/roundTripCrash.c: OK
-dirTestDict/symbols.c: OK
-dirTestDict/util.h: OK
-dirTestDict/zbufftest.c: OK
-dirTestDict/zstdcli.c: OK
-dirTestDict/zstreamtest.c: OK
-- dictionary builder on bogus input
-dictionary training failed : Cannot create Dictionary from provided samples 
-
-dictionary training failed : Cannot create Dictionary from provided samples 
-
-**** cover dictionary tests **** 
-
-- Create first dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 19 samples of total size 394153
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2448 epochs of size 161
-                                                                               Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDict 
-                                                                               tmp                  : 18.73%   ( 33356 =>   6248 bytes, tmp.zst) 
-                                                                               tmp.zst             : 33356 bytes 
-- Create second (different) dictionary
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 25 samples of total size 425477
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2011 epochs of size 211
-                                                                               Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDictC 
-Error 36 : Decoding error : Dictionary mismatch 
-- Create dictionary with short dictID
-!  Warning : nb of samples too low for proper processing ! 
-!  Please provide _one file per sample_. 
-!  Do not concatenate samples together into a single file, 
-!  as dictBuilder will be unable to find the beginning of each sample, 
-!  resulting in poor dictionary quality. 
-                                                                               Training on 19 samples of total size 394153
-Constructing partial suffix array
-Computing frequencies
-Building dictionary
-Breaking content into 2448 epochs of size 161
-                                                                               Constructed dictionary of size 112640
-Save dictionary of size 112640 into file tmpDict1 
-tmpDict tmpDict1 differ: byte 5, line 1
-- Create dictionary with size limit
-                                                                               Trying 54 different sets of parameters
-18%       46%       68%       92%                                                                                      k=778
-d=6
-steps=8
-Save dictionary of size 4096 into file tmpDict2 
-
-**** integrity tests **** 
-test one file (tmp1.zst) 
-
-                                                                               tmp1                 : 32.44%   ( 65537 =>  21262 bytes, tmp1.zst) 
-                                                                               tmp1.zst            : 65537 bytes 
-                                                                               tmp1.zst            : 65537 bytes 
-test multiple files (*.zst) 
-                                                                               tmp1.zst            : 65537 bytes 
-test bad files (*) 
-zstd: Makefile: not in zstd format 
-zstd: README.md: not in zstd format 
-zstd: datagen: not in zstd format 
-zstd: datagencli.c: not in zstd format 
-zstd: decodecorpus.c: not in zstd format 
-zstd: fullbench.c: not in zstd format 
-zstd: fuzzer.c: not in zstd format 
-zstd: gzip is a directory -- ignored 
-zstd: invalidDictionaries.c: not in zstd format 
-zstd: legacy.c: not in zstd format 
-zstd: longmatch.c: not in zstd format 
-zstd: namespaceTest.c: not in zstd format 
-zstd: paramgrill.c: not in zstd format 
-zstd: playTests.sh: not in zstd format 
-zstd: pool.c: not in zstd format 
-zstd: result: unexpected end of file 
-zstd: roundTripCrash.c: not in zstd format 
-zstd: symbols.c: not in zstd format 
-zstd: test-zstd-speed.py: not in zstd format 
-zstd: test-zstd-versions.py: not in zstd format 
-zstd: tmp1: not in zstd format 
-zstd: zbufftest.c: not in zstd format 
-zstd: zstreamtest.c: not in zstd format 
-zstd: tmp1: not in zstd format 
-zstd: tmp2.zst: not in zstd format 
-
-zstd: tmp3: unexpected end of file 
-test --rm and --test combined 
-                                                                               tmp1.zst            : 65537 bytes 
-24 -rw-r--r-- 1 root root 21262 Dec 25 10:36 tmp1.zst
-
-**** benchmark mode tests **** 
-bench one file
-
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21257 (3.083), 275.4 MB/s =-tmp1              :     65537 ->     21257 (3.083), 275.4 MB/s ,2849.4 MB/s 3#
-bench multiple levels
-Benchmarking levels from 1 to 3
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21451 (3.055), 780.2 MB/s =-tmp1              :     65537 ->     21451 (3.055), 780.2 MB/s ,2979.0 MB/s 1#
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21368 (3.067), 474.9 MB/s =-tmp1              :     65537 ->     21368 (3.067), 474.9 MB/s ,2730.7 MB/s 2#
-                                                                                |-tmp1              :     65537 -> /-tmp1              :     65537 ->     21257 (3.083), 170.7 MB/s =-tmp1              :     65537 ->     21257 (3.083), 170.7 MB/s ,1394.4 MB/s 3#
-with recursive and quiet modes
-bench 1.1.5 : input 65537 bytes, 1 seconds, 0 KB blocks
--1        21451 (3.055) 1092.28 MB/s 3640.9 MB/s  tmp1
--2        21368 (3.067) 809.10 MB/s 3276.8 MB/s  tmp1
-
-**** gzip compatibility tests **** 
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-gzip support detected
-gzip 1.10
-Copyright (C) 2018 Free Software Foundation, Inc.
-Copyright (C) 1993 Jean-loup Gailly.
-This is free software.  You may redistribute copies of it under the terms of
-the GNU General Public License <https://www.gnu.org/licenses/gpl.html>.
-There is NO WARRANTY, to the extent permitted by law.
-
-Written by Jean-loup Gailly.
-
-                                                                               tmp                  : 38.37%   ( 65537 =>  25149 bytes, tmp.gz) 
-tmp.gz:	 OK
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-                                                                               tmp.gz              : 65537 bytes 
-
-**** gzip frame tests **** 
-
-                                                                               tmp                  : 38.37%   ( 65537 =>  25149 bytes, tmp.gz) 
-                                                                               tmp                  : 32.44%   ( 65537 =>  21262 bytes, tmp.zst) 
-                                                                               /*stdin*\           : 262148 bytes 
-Error 39 : zstd: /*stdin*\: premature end 
-
-**** xz compatibility tests **** 
-Incorrect parameters
-Usage :
-      zstd [args] [FILE(s)] [-o file]
-
-FILE    : a filename
-          with no FILE, or when FILE is - , read standard input
-Arguments :
- -#     : # compression level (1-19, default:3) 
- -d     : decompression 
- -D file: use `file` as Dictionary 
- -o file: result stored into `file` (only if 1 input file) 
- -f     : overwrite output without prompting and (de)compress links 
---rm    : remove source file(s) after successful de/compression 
- -k     : preserve source file(s) (default) 
- -h/-H  : display help/long help and exit
-xz mode not supported
-
-**** xz frame tests **** 
-xz mode not supported
-
-**** zstd round-trip tests **** 
-roundTripTest: ./datagen   |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.43%   ( 65537 =>  21253 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g15K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 25.95%   ( 15360 =>   3986 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g127K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 31.99%   (130048 =>  41598 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g255K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.78%   (261120 =>  85590 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g522K  |  ../programs/zstd -v |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.50%   (534528 => 173731 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g519K  |  ../programs/zstd -v6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.42%   (531456 => 172298 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g517K  |  ../programs/zstd -v16 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 32.35%   (529408 => 171263 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g516K  |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-
-                                                                               /*stdin*\            : 30.93%   (528384 => 163442 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v1 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 79 MB ==> 31.61%Read : 158 MB ==> 31.63%Read : 237 MB ==> 31.63%
-                                                                               /*stdin*\            : 31.63%   (270000000 => 85392542 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v2 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 62 MB ==> 31.37%Read : 124 MB ==> 31.40%Read : 185 MB ==> 31.39%Read : 247 MB ==> 31.40%
-                                                                               /*stdin*\            : 31.40%   (270000000 => 84768095 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g270000000  |  ../programs/zstd -v3 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 33 MB ==> 32.48%Read : 73 MB ==> 32.49%Read : 115 MB ==> 32.48%Read : 158 MB ==> 32.49%Read : 200 MB ==> 32.49%Read : 243 MB ==> 32.50%
-                                                                               /*stdin*\            : 32.49%   (270000000 => 87714659 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v4 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 33 MB ==> 27.69%Read : 66 MB ==> 27.74%Read : 100 MB ==> 27.78%Read : 128 MB ==> 27.75%
-                                                                               /*stdin*\            : 27.74%   (140000000 => 38829774 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v5 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 20 MB ==> 26.88%Read : 38 MB ==> 26.91%Read : 55 MB ==> 26.93%Read : 72 MB ==> 26.92%Read : 89 MB ==> 26.97%Read : 107 MB ==> 26.95%Read : 125 MB ==> 26.94%
-                                                                               /*stdin*\            : 26.92%   (140000000 => 37692475 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g140000000 -P60 |  ../programs/zstd -v6 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 8 MB ==> 27.10%Read : 16 MB ==> 27.16%Read : 23 MB ==> 27.24%Read : 31 MB ==> 27.23%Read : 51 MB ==> 27.25%Read : 72 MB ==> 27.23%Read : 91 MB ==> 27.28%Read : 112 MB ==> 27.26%Read : 132 MB ==> 27.25%
-                                                                               /*stdin*\            : 27.24%   (140000000 => 38130628 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v7 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 18 MB ==> 21.49%Read : 37 MB ==> 21.46%Read : 54 MB ==> 21.45%
-                                                                               /*stdin*\            : 21.47%   (70000000 => 15026603 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v8 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 11 MB ==> 21.37%Read : 21 MB ==> 21.36%Read : 34 MB ==> 21.30%Read : 48 MB ==> 21.33%Read : 62 MB ==> 21.33%
-                                                                               /*stdin*\            : 21.32%   (70000000 => 14926928 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g70000000 -P70 |  ../programs/zstd -v9 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 7 MB ==> 21.22%Read : 14 MB ==> 21.30%Read : 20 MB ==> 21.36%Read : 28 MB ==> 21.28%Read : 36 MB ==> 21.30%Read : 43 MB ==> 21.30%Read : 48 MB ==> 21.32%Read : 53 MB ==> 21.30%Read : 57 MB ==> 21.32%Read : 59 MB ==> 21.31%Read : 61 MB ==> 21.31%Read : 63 MB ==> 21.31%Read : 65 MB ==> 21.31%
-                                                                               /*stdin*\            : 21.32%   (70000000 => 14921221 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v10 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 3 MB ==> 18.11%Read : 6 MB ==> 18.21%Read : 8 MB ==> 18.43%Read : 11 MB ==> 18.50%Read : 14 MB ==> 18.42%Read : 17 MB ==> 18.51%Read : 20 MB ==> 18.54%Read : 25 MB ==> 18.52%Read : 29 MB ==> 18.49%
-                                                                               /*stdin*\            : 18.45%   (35000000 => 6457332 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v11 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 3 MB ==> 18.16%Read : 6 MB ==> 18.31%Read : 8 MB ==> 18.53%Read : 11 MB ==> 18.64%Read : 13 MB ==> 18.59%Read : 16 MB ==> 18.60%Read : 18 MB ==> 18.67%Read : 21 MB ==> 18.69%Read : 23 MB ==> 18.69%Read : 25 MB ==> 18.68%Read : 29 MB ==> 18.65%Read : 32 MB ==> 18.62%
-                                                                               /*stdin*\            : 18.61%   (35000000 => 6511947 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g35000000 -P75 |  ../programs/zstd -v12 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 3 MB ==> 18.16%Read : 5 MB ==> 18.36%Read : 8 MB ==> 18.49%Read : 11 MB ==> 18.63%Read : 13 MB ==> 18.60%Read : 16 MB ==> 18.60%Read : 19 MB ==> 18.67%Read : 21 MB ==> 18.69%Read : 24 MB ==> 18.68%Read : 26 MB ==> 18.69%Read : 28 MB ==> 18.66%Read : 30 MB ==> 18.64%Read : 31 MB ==> 18.63%
-                                                                               /*stdin*\            : 18.61%   (35000000 => 6513177 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g18000000 -P80 |  ../programs/zstd -v13 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 2 MB ==> 15.51%Read : 3 MB ==> 15.66%Read : 4 MB ==> 15.82%Read : 5 MB ==> 15.81%Read : 6 MB ==> 15.80%Read : 7 MB ==> 15.84%Read : 8 MB ==> 15.84%Read : 9 MB ==> 15.86%Read : 10 MB ==> 15.87%Read : 11 MB ==> 15.87%Read : 12 MB ==> 15.90%Read : 13 MB ==> 15.89%Read : 14 MB ==> 15.89%Read : 15 MB ==> 15.92%Read : 16 MB ==> 15.91%
-                                                                               /*stdin*\            : 15.90%   (18000000 => 2862001 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g18000000 -P80 |  ../programs/zstd -v14 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 2 MB ==> 15.58%Read : 3 MB ==> 15.67%Read : 4 MB ==> 15.78%Read : 5 MB ==> 15.81%Read : 5 MB ==> 15.82%Read : 6 MB ==> 15.84%Read : 7 MB ==> 15.86%Read : 8 MB ==> 15.86%Read : 9 MB ==> 15.87%Read : 10 MB ==> 15.86%Read : 11 MB ==> 15.88%Read : 12 MB ==> 15.87%Read : 12 MB ==> 15.90%Read : 13 MB ==> 15.89%Read : 14 MB ==> 15.88%Read : 15 MB ==> 15.94%Read : 16 MB ==> 15.93%Read : 17 MB ==> 15.91%
-                                                                               /*stdin*\            : 15.91%   (18000000 => 2863041 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g18000000 -P80 |  ../programs/zstd -v15 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 2 MB ==> 15.42%Read : 3 MB ==> 15.66%Read : 4 MB ==> 15.80%Read : 6 MB ==> 15.79%Read : 7 MB ==> 15.84%Read : 8 MB ==> 15.83%Read : 10 MB ==> 15.84%Read : 11 MB ==> 15.84%Read : 13 MB ==> 15.86%Read : 14 MB ==> 15.84%Read : 16 MB ==> 15.88%
-                                                                               /*stdin*\            : 15.87%   (18000000 => 2855988 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g18000000 -P80 |  ../programs/zstd -v16 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 1 MB ==> 15.42%Read : 2 MB ==> 15.65%Read : 3 MB ==> 15.64%Read : 4 MB ==> 15.74%Read : 4 MB ==> 15.79%Read : 5 MB ==> 15.78%Read : 6 MB ==> 15.77%Read : 7 MB ==> 15.85%Read : 7 MB ==> 15.84%Read : 8 MB ==> 15.85%Read : 9 MB ==> 15.85%Read : 9 MB ==> 15.87%Read : 10 MB ==> 15.87%Read : 11 MB ==> 15.89%Read : 12 MB ==> 15.88%Read : 12 MB ==> 15.91%Read : 13 MB ==> 15.89%Read : 14 MB ==> 15.90%Read : 14 MB ==> 15.92%Read : 15 MB ==> 15.95%Read : 16 MB ==> 15.94%
-                                                                               /*stdin*\            : 15.93%   (18000000 => 2866586 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g18000000 -P80 |  ../programs/zstd -v17 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 1 MB ==> 13.57%Read : 2 MB ==> 13.93%Read : 3 MB ==> 13.92%Read : 4 MB ==> 13.93%Read : 5 MB ==> 13.88%Read : 6 MB ==> 13.87%Read : 8 MB ==> 13.87%Read : 8 MB ==> 13.87%Read : 9 MB ==> 13.87%Read : 10 MB ==> 13.86%Read : 11 MB ==> 13.86%Read : 12 MB ==> 13.88%Read : 13 MB ==> 13.86%Read : 14 MB ==> 13.85%Read : 15 MB ==> 13.90%Read : 16 MB ==> 13.88%
-                                                                               /*stdin*\            : 13.87%   (18000000 => 2496256 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g50000000 -P94 |  ../programs/zstd -v18 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 1 MB ==> 7.34%Read : 2 MB ==> 7.55%Read : 3 MB ==> 7.59%Read : 4 MB ==> 7.63%Read : 5 MB ==> 7.71%Read : 6 MB ==> 7.70%Read : 7 MB ==> 7.72%Read : 7 MB ==> 7.72%Read : 8 MB ==> 7.73%Read : 9 MB ==> 7.73%Read : 9 MB ==> 7.74%Read : 10 MB ==> 7.72%Read : 11 MB ==> 7.73%Read : 12 MB ==> 7.70%Read : 13 MB ==> 7.69%Read : 13 MB ==> 7.68%Read : 14 MB ==> 7.70%Read : 15 MB ==> 7.70%Read : 16 MB ==> 7.69%Read : 17 MB ==> 7.71%Read : 17 MB ==> 7.70%Read : 18 MB ==> 7.70%Read : 19 MB ==> 7.70%Read : 20 MB ==> 7.71%Read : 21 MB ==> 7.71%Read : 22 MB ==> 7.74%Read : 22 MB ==> 7.74%Read : 23 MB ==> 7.74%Read : 24 MB ==> 7.74%Read : 25 MB ==> 7.73%Read : 26 MB ==> 7.74%Read : 26 MB ==> 7.74%Read : 27 MB ==> 7.73%Read : 28 MB ==> 7.72%Read : 28 MB ==> 7.72%Read : 29 MB ==> 7.72%Read : 30 MB ==> 7.72%Read : 31 MB ==> 7.72%Read : 31 MB ==> 7.72%Read : 32 MB ==> 7.73%Read : 33 MB ==> 7.73%Read : 34 MB ==> 7.73%Read : 35 MB ==> 7.74%Read : 35 MB ==> 7.74%Read : 36 MB ==> 7.74%Read : 37 MB ==> 7.75%Read : 37 MB ==> 7.74%Read : 38 MB ==> 7.74%Read : 39 MB ==> 7.74%Read : 40 MB ==> 7.74%Read : 40 MB ==> 7.74%Read : 41 MB ==> 7.73%Read : 42 MB ==> 7.73%Read : 42 MB ==> 7.73%Read : 43 MB ==> 7.73%Read : 43 MB ==> 7.73%Read : 44 MB ==> 7.73%Read : 45 MB ==> 7.73%Read : 45 MB ==> 7.73%Read : 46 MB ==> 7.73%Read : 46 MB ==> 7.73%Read : 47 MB ==> 7.74%
-                                                                               /*stdin*\            :  7.73%   (50000000 => 3866422 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g50000000 -P94 |  ../programs/zstd -v19 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 1 MB ==> 7.31%Read : 2 MB ==> 7.53%Read : 2 MB ==> 7.56%Read : 3 MB ==> 7.63%Read : 3 MB ==> 7.60%Read : 4 MB ==> 7.63%Read : 4 MB ==> 7.64%Read : 5 MB ==> 7.70%Read : 5 MB ==> 7.72%Read : 5 MB ==> 7.69%Read : 6 MB ==> 7.71%Read : 6 MB ==> 7.72%Read : 7 MB ==> 7.75%Read : 7 MB ==> 7.74%Read : 8 MB ==> 7.74%Read : 8 MB ==> 7.75%Read : 9 MB ==> 7.75%Read : 9 MB ==> 7.75%Read : 9 MB ==> 7.75%Read : 10 MB ==> 7.74%Read : 10 MB ==> 7.74%Read : 11 MB ==> 7.75%Read : 11 MB ==> 7.72%Read : 12 MB ==> 7.70%Read : 12 MB ==> 7.71%Read : 13 MB ==> 7.69%Read : 14 MB ==> 7.70%Read : 14 MB ==> 7.71%Read : 14 MB ==> 7.71%Read : 15 MB ==> 7.72%Read : 15 MB ==> 7.72%Read : 16 MB ==> 7.72%Read : 16 MB ==> 7.71%Read : 17 MB ==> 7.72%Read : 17 MB ==> 7.72%Read : 18 MB ==> 7.72%Read : 18 MB ==> 7.71%Read : 19 MB ==> 7.72%Read : 19 MB ==> 7.72%Read : 20 MB ==> 7.72%Read : 20 MB ==> 7.73%Read : 21 MB ==> 7.75%Read : 21 MB ==> 7.75%Read : 22 MB ==> 7.75%Read : 23 MB ==> 7.76%Read : 23 MB ==> 7.75%Read : 24 MB ==> 7.75%Read : 24 MB ==> 7.75%Read : 25 MB ==> 7.75%Read : 25 MB ==> 7.75%Read : 26 MB ==> 7.75%Read : 26 MB ==> 7.75%Read : 27 MB ==> 7.75%Read : 27 MB ==> 7.75%Read : 27 MB ==> 7.74%Read : 28 MB ==> 7.74%Read : 28 MB ==> 7.74%Read : 29 MB ==> 7.73%Read : 29 MB ==> 7.73%Read : 30 MB ==> 7.74%Read : 30 MB ==> 7.74%Read : 31 MB ==> 7.74%Read : 31 MB ==> 7.74%Read : 31 MB ==> 7.73%Read : 32 MB ==> 7.73%Read : 32 MB ==> 7.74%Read : 33 MB ==> 7.75%Read : 33 MB ==> 7.75%Read : 33 MB ==> 7.75%Read : 34 MB ==> 7.75%Read : 34 MB ==> 7.75%Read : 34 MB ==> 7.75%Read : 35 MB ==> 7.76%Read : 36 MB ==> 7.76%Read : 36 MB ==> 7.76%Read : 37 MB ==> 7.76%Read : 37 MB ==> 7.76%Read : 38 MB ==> 7.76%Read : 39 MB ==> 7.75%Read : 39 MB ==> 7.75%Read : 40 MB ==> 7.75%Read : 40 MB ==> 7.75%Read : 41 MB ==> 7.75%Read : 41 MB ==> 7.75%Read : 41 MB ==> 7.74%Read : 42 MB ==> 7.74%Read : 42 MB ==> 7.74%Read : 43 MB ==> 7.74%Read : 43 MB ==> 7.74%Read : 44 MB ==> 7.74%Read : 44 MB ==> 7.75%Read : 45 MB ==> 7.74%Read : 45 MB ==> 7.74%Read : 46 MB ==> 7.75%Read : 46 MB ==> 7.74%Read : 46 MB ==> 7.75%Read : 47 MB ==> 7.75%
-                                                                               /*stdin*\            :  7.75%   (50000000 => 3874806 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g99000000 -P99 |  ../programs/zstd -v20 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 0 MB ==> 4.38%Read : 1 MB ==> 5.10%Read : 2 MB ==> 5.27%Read : 2 MB ==> 5.32%Read : 3 MB ==> 5.44%Read : 4 MB ==> 5.53%Read : 5 MB ==> 5.57%Read : 5 MB ==> 5.63%Read : 6 MB ==> 5.66%Read : 6 MB ==> 5.69%Read : 7 MB ==> 5.71%Read : 7 MB ==> 5.72%Read : 8 MB ==> 5.72%Read : 9 MB ==> 5.74%Read : 9 MB ==> 5.75%Read : 9 MB ==> 5.74%Read : 10 MB ==> 5.74%Read : 10 MB ==> 5.74%Read : 11 MB ==> 5.75%Read : 11 MB ==> 5.74%Read : 12 MB ==> 5.75%Read : 12 MB ==> 5.75%Read : 13 MB ==> 5.75%Read : 13 MB ==> 5.76%Read : 14 MB ==> 5.76%Read : 14 MB ==> 5.75%Read : 15 MB ==> 5.76%Read : 15 MB ==> 5.77%Read : 16 MB ==> 5.77%Read : 16 MB ==> 5.78%Read : 16 MB ==> 5.78%Read : 17 MB ==> 5.78%Read : 17 MB ==> 5.78%Read : 18 MB ==> 5.78%Read : 18 MB ==> 5.78%Read : 18 MB ==> 5.79%Read : 19 MB ==> 5.80%Read : 19 MB ==> 5.80%Read : 20 MB ==> 5.80%Read : 20 MB ==> 5.81%Read : 20 MB ==> 5.81%Read : 21 MB ==> 5.81%Read : 21 MB ==> 5.81%Read : 21 MB ==> 5.81%Read : 22 MB ==> 5.81%Read : 22 MB ==> 5.81%Read : 23 MB ==> 5.81%Read : 23 MB ==> 5.81%Read : 23 MB ==> 5.82%Read : 24 MB ==> 5.82%Read : 24 MB ==> 5.82%Read : 24 MB ==> 5.82%Read : 25 MB ==> 5.83%Read : 25 MB ==> 5.83%Read : 26 MB ==> 5.83%Read : 26 MB ==> 5.83%Read : 26 MB ==> 5.83%Read : 27 MB ==> 5.83%Read : 27 MB ==> 5.83%Read : 27 MB ==> 5.83%Read : 28 MB ==> 5.83%Read : 28 MB ==> 5.84%Read : 29 MB ==> 5.83%Read : 29 MB ==> 5.83%Read : 29 MB ==> 5.84%Read : 30 MB ==> 5.84%Read : 30 MB ==> 5.84%Read : 31 MB ==> 5.84%Read : 31 MB ==> 5.85%Read : 31 MB ==> 5.85%Read : 32 MB ==> 5.85%Read : 32 MB ==> 5.86%Read : 32 MB ==> 5.86%Read : 33 MB ==> 5.86%Read : 33 MB ==> 5.86%Read : 33 MB ==> 5.86%Read : 34 MB ==> 5.86%Read : 34 MB ==> 5.86%Read : 35 MB ==> 5.86%Read : 35 MB ==> 5.86%Read : 35 MB ==> 5.86%Read : 36 MB ==> 5.86%Read : 36 MB ==> 5.86%Read : 36 MB ==> 5.86%Read : 37 MB ==> 5.86%Read : 37 MB ==> 5.86%Read : 38 MB ==> 5.86%Read : 38 MB ==> 5.86%Read : 38 MB ==> 5.86%Read : 39 MB ==> 5.86%Read : 39 MB ==> 5.86%Read : 39 MB ==> 5.86%Read : 40 MB ==> 5.86%Read : 40 MB ==> 5.86%Read : 40 MB ==> 5.86%Read : 41 MB ==> 5.86%Read : 41 MB ==> 5.86%Read : 42 MB ==> 5.87%Read : 42 MB ==> 5.87%Read : 42 MB ==> 5.88%Read : 42 MB ==> 5.87%Read : 43 MB ==> 5.87%Read : 43 MB ==> 5.87%Read : 43 MB ==> 5.87%Read : 43 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 44 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 45 MB ==> 5.87%Read : 46 MB ==> 5.87%Read : 46 MB ==> 5.88%Read : 46 MB ==> 5.87%Read : 47 MB ==> 5.88%Read : 47 MB ==> 5.88%Read : 47 MB ==> 5.88%Read : 47 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 48 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 49 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 50 MB ==> 5.88%Read : 51 MB ==> 5.88%Read : 51 MB ==> 5.88%Read : 51 MB ==> 5.88%Read : 51 MB ==> 5.89%Read : 51 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 52 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 53 MB ==> 5.89%Read : 54 MB ==> 5.89%Read : 54 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 55 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 56 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 57 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 58 MB ==> 5.89%Read : 59 MB ==> 5.89%Read : 59 MB ==> 5.89%Read : 59 MB ==> 5.89%Read : 60 MB ==> 5.89%Read : 60 MB ==> 5.89%Read : 61 MB ==> 5.89%Read : 61 MB ==> 5.89%Read : 61 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 62 MB ==> 5.89%Read : 63 MB ==> 5.89%Read : 63 MB ==> 5.90%Read : 63 MB ==> 5.90%Read : 64 MB ==> 5.90%Read : 64 MB ==> 5.90%Read : 65 MB ==> 5.90%Read : 65 MB ==> 5.90%Read : 65 MB ==> 5.90%Read : 65 MB ==> 5.90%Read : 66 MB ==> 5.90%Read : 66 MB ==> 5.90%Read : 66 MB ==> 5.90%Read : 66 MB ==> 5.90%Read : 67 MB ==> 5.90%Read : 67 MB ==> 5.90%Read : 67 MB ==> 5.90%Read : 67 MB ==> 5.90%Read : 68 MB ==> 5.90%Read : 68 MB ==> 5.90%Read : 68 MB ==> 5.90%Read : 68 MB ==> 5.90%Read : 69 MB ==> 5.90%Read : 69 MB ==> 5.90%Read : 69 MB ==> 5.90%Read : 70 MB ==> 5.90%Read : 70 MB ==> 5.90%Read : 70 MB ==> 5.90%Read : 70 MB ==> 5.90%Read : 71 MB ==> 5.90%Read : 71 MB ==> 5.90%Read : 72 MB ==> 5.90%Read : 72 MB ==> 5.90%Read : 72 MB ==> 5.90%Read : 73 MB ==> 5.90%Read : 73 MB ==> 5.91%Read : 73 MB ==> 5.91%Read : 74 MB ==> 5.91%Read : 74 MB ==> 5.91%Read : 74 MB ==> 5.91%Read : 75 MB ==> 5.91%Read : 75 MB ==> 5.91%Read : 75 MB ==> 5.91%Read : 76 MB ==> 5.91%Read : 76 MB ==> 5.91%Read : 77 MB ==> 5.91%Read : 77 MB ==> 5.90%Read : 77 MB ==> 5.90%Read : 78 MB ==> 5.90%Read : 78 MB ==> 5.90%Read : 78 MB ==> 5.90%Read : 79 MB ==> 5.90%Read : 79 MB ==> 5.90%Read : 79 MB ==> 5.90%Read : 80 MB ==> 5.90%Read : 80 MB ==> 5.90%Read : 81 MB ==> 5.90%Read : 81 MB ==> 5.90%Read : 81 MB ==> 5.90%Read : 82 MB ==> 5.90%Read : 82 MB ==> 5.90%Read : 83 MB ==> 5.90%Read : 83 MB ==> 5.90%Read : 83 MB ==> 5.90%Read : 84 MB ==> 5.90%Read : 84 MB ==> 5.90%Read : 84 MB ==> 5.90%Read : 85 MB ==> 5.90%Read : 85 MB ==> 5.90%Read : 86 MB ==> 5.90%Read : 86 MB ==> 5.90%Read : 86 MB ==> 5.90%Read : 87 MB ==> 5.90%Read : 87 MB ==> 5.90%Read : 88 MB ==> 5.90%Read : 88 MB ==> 5.90%Read : 88 MB ==> 5.90%Read : 89 MB ==> 5.90%Read : 89 MB ==> 5.90%Read : 89 MB ==> 5.90%Read : 90 MB ==> 5.90%Read : 90 MB ==> 5.90%Read : 90 MB ==> 5.90%Read : 91 MB ==> 5.90%Read : 91 MB ==> 5.90%Read : 92 MB ==> 5.90%Read : 92 MB ==> 5.90%Read : 93 MB ==> 5.90%Read : 93 MB ==> 5.90%Read : 93 MB ==> 5.90%Read : 94 MB ==> 5.90%
-Read : 94 MB ==> 5.90%                                                                               /*stdin*\            :  5.90%   (99000000 => 5842434 bytes, /*stdout*\) 
-roundTripTest: ./datagen -g6000000000 -P99 |  ../programs/zstd -v1 |  ../programs/zstd -d
-
-*** zstd command line interface 64-bits v1.1.5, by Yann Collet ***
-Read : 89 MB ==> 9.42%Read : 181 MB ==> 9.41%Read : 261 MB ==> 9.41%Read : 352 MB ==> 9.42%Read : 442 MB ==> 9.42%Read : 529 MB ==> 9.42%Read : 621 MB ==> 9.42%Read : 709 MB ==> 9.42%Read : 801 MB ==> 9.42%Read : 896 MB ==> 9.42%Read : 989 MB ==> 9.42%Read : 1084 MB ==> 9.42%Read : 1180 MB ==> 9.42%Read : 1272 MB ==> 9.42%Read : 1364 MB ==> 9.42%Read : 1455 MB ==> 9.42%Read : 1549 MB ==> 9.42%Read : 1642 MB ==> 9.42%Read : 1732 MB ==> 9.42%Read : 1803 MB ==> 9.42%Read : 1880 MB ==> 9.42%Read : 1966 MB ==> 9.42%Read : 2059 MB ==> 9.42%Read : 2148 MB ==> 9.42%Read : 2242 MB ==> 9.42%Read : 2335 MB ==> 9.42%Read : 2427 MB ==> 9.42%Read : 2520 MB ==> 9.42%Read : 2613 MB ==> 9.42%Read : 2702 MB ==> 9.42%Read : 2789 MB ==> 9.42%Read : 2876 MB ==> 9.42%Read : 2949 MB ==> 9.42%Read : 3022 MB ==> 9.42%Read : 3095 MB ==> 9.42%Read : 3168 MB ==> 9.42%Read : 3241 MB ==> 9.42%Read : 3322 MB ==> 9.42%Read : 3411 MB ==> 9.42%Read : 3500 MB ==> 9.42%Read : 3585 MB ==> 9.42%Read : 3672 MB ==> 9.42%Read : 3754 MB ==> 9.42%Read : 3845 MB ==> 9.42%Read : 3937 MB ==> 9.42%Read : 4021 MB ==> 9.42%Read : 4106 MB ==> 9.42%Read : 4183 MB ==> 9.42%Read : 4247 MB ==> 9.42%Read : 4311 MB ==> 9.42%Read : 4373 MB ==> 9.42%Read : 4437 MB ==> 9.42%Read : 4498 MB ==> 9.42%Read : 4557 MB ==> 9.42%Read : 4623 MB ==> 9.42%Read : 4688 MB ==> 9.42%Read : 4753 MB ==> 9.42%Read : 4823 MB ==> 9.42%Read : 4904 MB ==> 9.42%Read : 4994 MB ==> 9.42%Read : 5087 MB ==> 9.42%Read : 5181 MB ==> 9.42%Read : 5271 MB ==> 9.42%Read : 5366 MB ==> 9.42%Read : 5460 MB ==> 9.42%Read : 5553 MB ==> 9.42%Read : 5644 MB ==> 9.42%
-                                                                               /*stdin*\            :  9.42%   (6000000000 => 564962202 bytes, /*stdout*\) 
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../programs/datagen.c fullbench.c -o fullbench
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-./fullbench -i1
-*** Zstandard speed analyzer 1.1.5 64-bits, by Yann Collet (Dec 25 2025) ***
-- 1 iterations -
-                                                                                Sample 10MiB : 
- 1- ZSTD_compress                  :  1- ZSTD_compress                  :   833.6 MB/s  (  3139167) 1
- 2- ZSTD_decompress                :  1- ZSTD_decompress                :  2970.1 MB/s  ( 10000000) 2
-11- ZSTD_compressContinue          :  1- ZSTD_compressContinue          :   841.0 MB/s  (  3139163)11
-12- ZSTD_compressContinue_extDict  :  1- ZSTD_compressContinue_extDict  :   857.9 MB/s  (  3139198)12
-13- ZSTD_decompressContinue        :  1- ZSTD_decompressContinue        :  2972.8 MB/s  ( 10000000)13
-31- ZSTD_decodeLiteralsBlock       :  1- ZSTD_decodeLiteralsBlock       :  5923.9 MB/s  (    36739)31
-32- ZSTD_decodeSeqHeaders          :  1- ZSTD_decodeSeqHeaders          : 97961.9 MB/s  (       74)32
-41- ZSTD_compressStream            :  1- ZSTD_compressStream            :   707.4 MB/s  (  3139164)41
-42- ZSTD_decompressStream          :  1- ZSTD_decompressStream          :  2950.1 MB/s  ( 10000000)42
-./fullbench -i1 -P0
-*** Zstandard speed analyzer 1.1.5 64-bits, by Yann Collet (Dec 25 2025) ***
-- 1 iterations -
-                                                                                Sample 10MiB : 
- 1- ZSTD_compress                  :  1- ZSTD_compress                  :  3243.6 MB/s  ( 10000241) 1
- 2- ZSTD_decompress                :  1- ZSTD_decompress                : 51639.7 MB/s  ( 10000000) 2
-11- ZSTD_compressContinue          :  1- ZSTD_compressContinue          :  2954.8 MB/s  ( 10000237)11
-12- ZSTD_compressContinue_extDict  :  1- ZSTD_compressContinue_extDict  :  2706.8 MB/s  ( 10000223)12
-13- ZSTD_decompressContinue        :  1- ZSTD_decompressContinue        : 31845.7 MB/s  ( 10000000)13
-ZSTD_decodeLiteralsBlock : impossible to test on this sample (not compressible)
-ZSTD_decodeSeqHeaders : impossible to test on this sample (not compressible)
-41- ZSTD_compressStream            :  1- ZSTD_compressStream            :  2893.3 MB/s  ( 10000237)41
-42- ZSTD_decompressStream          :  1- ZSTD_decompressStream          : 48767.8 MB/s  ( 10000000)42
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c ../programs/datagen.c fuzzer.c -o fuzzer
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-./fuzzer -T5mn 
-Starting zstd tester (64-bits, 1.1.5)
-Seed = 6017
-     1              21              38              39              59              78              91              99             113             129             143             163             195             202             225             240             278             299             332             366             372             382             397             431             439             454             485             500             529             551             571             581             588             607             632             645             652             666             672             703             724             740             765             771             779             790             811             834             842             871             883             919             934             960             969             975             983             997            1009            1015            1039            1062            1069            1087            1107            1117            1170            1216            1233            1238            1255            1273            1278            1305            1318            1345            1356            1386            1402            1423            1447            1460            1461            1476            1506            1524            1525            1535            1538            1582            1600            1622            1633            1645            1653            1680            1684            1689            1694            1704            1734            1740            1764            1799            1820            1867            1883            1902            1906            1920            1931            1955            1970            1989            1998            2004            2025            2044            2063            2074            2087            2094            2099            2109            2119            2159            2197            2213            2227            2247            2258            2287            2313            2330            2338            2364            2389            2418            2429            2440            2469            2487            2497            2513            2539            2562            2569            2594            2620            2640            2654            2678            2700            2729            2763            2771            2782            2803            2813            2826            2846            2854            2866            2870            2884            2900            2909            2913            2921            2946            2953            2955            2971            3001            3023            3041            3059            3071            3088            3092            3103            3105            3109            3135            3152            3172            3188            3193            3200            3206            3214            3216            3231            3240            3244            3249            3251            3254            3255            3270            3289            3295            3310            3333            3341            3359            3380            3404            3435            3449            3466            3491            3506            3514            3525            3532            3534            3542            3545            3567            3577            3581            3593            3601            3615            3620            3635            3637            3656            3675            3695            3732            3740            3749            3762            3777            3787            3809            3835            3845            3885            3908            3935            3942            3955            3962            3971            3996            4009            4048            4076            4089            4097            4117            4140            4152            4177            4188            4198            4214            4235            4248            4265            4286            4312            4335            4350            4374            4385            4403            4410            4420            4422            4437            4452            4465            4475            4481            4494            4508            4531            4555            4582            4595            4624            4627            4640            4660            4674            4694            4725            4728            4743            4770            4790            4807            4822            4837            4851            4861            4876            4910            4936            4950            4975            4996            5003            5021            5049            5055            5068            5088            5092            5110            5111            5126            5150            5163            5174            5202            5210            5217            5242            5251            5264            5282            5306            5317            5331            5347            5369            5383            5398            5424            5427            5431            5434            5442            5455            5459            5460            5481            5490            5509            5523            5532            5536            5543            5558            5580            5593            5605            5621            5628            5659            5680            5688            5697            5711            5737            5758            5794            5799            5811            5820            5848            5856            5865            5891            5923            5927            5951            5967            5989            6004            6016            6038            6069            6075            6091            6098            6114            6124            6127            6143            6147            6156            6184            6197            6216            6237            6250            6259            6283            6310            6323            6349            6362            6367            6383            6390            6421            6423            6427            6448            6464            6491            6523            6536            6541            6553            6565            6578            6587            6589            6595            6599            6622            6634            6642            6649            6654            6658            6690            6707            6724            6731            6743            6756            6768            6770            6805            6823            6828            6859            6864            6868            6871            6891            6907            6915            6951            6963            6974            6984            6996            7003            7015            7048            7054            7070            7095            7122            7144            7173            7182            7206            7230            7247            7263            7277            7289            7305            7324            7344            7358            7392            7427            7444            7477            7491            7508            7529            7538            7551            7566            7567            7581            7596            7601            7617            7635            7661            7667            7674            7678            7688            7705            7709            7724            7731            7738            7757            7769            7782            7787            7796            7808            7814            7834            7844            7855            7860            7883            7899            7903            7910            7934            7962            7972            7991            8037            8055            8082            8090            8101            8120            8135            8159            8170            8191            8200            8226            8232            8238            8264            8271            8288            8298            8310            8323            8343            8380            8411            8453            8463            8476            8498            8509            8540            8561            8565            8572            8596            8606            8625            8640            8671            8694            8715            8744            8771            8786            8809            8819            8823            8824            8844            8856            8871            8907            8936            8981            9007            9017            9022            9038            9067            9097            9127            9146            9160            9166            9168            9194            9201            9217            9241            9255            9268            9290            9304            9311            9314            9319            9344            9349            9358            9371            9390            9400            9414            9443            9484            9499            9530            9542            9546            9554            9564            9592            9602            9612            9624            9632            9657            9667            9680            9702            9712            9735            9769            9782            9813            9819            9832            9854            9879            9917            9923            9935            9945            9951            9958            9976            9977            9996           10004           10022           10052           10081           10087           10098           10104           10107           10126           10136           10142           10154           10157           10196           10207           10220           10237           10238           10242           10262           10285           10311           10321           10326           10328           10339           10348           10352           10385           10409           10428           10439           10473           10475           10500           10512           10534           10558           10577           10580           10602           10617           10626           10639           10646           10672           10704           10721           10737           10740           10758           10762           10778           10799           10818           10840           10854           10876           10901           10929           10946           10972           11001           11003           11012           11042           11060           11082           11114           11157           11176           11189           11216           11241           11256           11276           11296           11321           11322           11339           11361           11368           11370           11377           11381           11408           11424           11444           11474           11496           11500           11513           11544           11558           11589           11614           11620           11625           11640           11645           11655           11663           11682           11696           11710           11742           11744           11768           11777           11781           11802           11810           11817           11832           11850           11875           11889           11901           11902           11921           11944           11953           11984           12001           12004           12012           12027           12031           12051           12085           12089           12097           12105           12110           12122           12134           12135           12146           12164           12194           12196           12197           12211           12225           12236           12243           12247           12267           12286           12291           12316           12317           12335           12357           12374           12414           12419           12433           12453           12498           12508           12511           12529           12564           12584           12598           12600           12608           12633           12643           12653           12674           12681           12701           12719           12739           12767           12788           12812           12824           12832           12857           12878           12899           12928           12941           12952           12968           12985           13000           13020           13034           13048           13064           13080           13103           13126           13159           13179           13196           13206           13209           13240           13259           13264           13267           13280           13292           13321           13355           13378           13393           13414           13438           13458           13475           13494           13504           13526           13558           13567           13582           13591           13606           13622           13635           13666           13697           13701           13718           13732           13735           13760           13799           13818           13821           13837           13861           13872           13899           13902           13933           13957           13982           13994           14011           14049           14056           14077           14090           14101           14123           14136           14150           14175           14202           14238           14248           14278           14303           14318           14336           14348           14363           14368           14384           14402           14410           14426           14438           14459           14487           14500           14532           14552           14575           14608           14630           14651           14654           14671           14691           14711           14736           14740           14750           14770           14782           14799           14801           14806           14822           14847           14874           14877           14914           14928           14935           14953           14991           15002           15014           15027           15037           15055           15075           15078           15096           15110           15122           15146           15158           15191           15196           15201           15203           15204           15224           15232           15245           15258           15292           15296           15303           15318           15322           15351           15375           15378           15388           15395           15408           15425           15436           15450           15467           15473           15503           15506           15511           15521           15539           15566           15575           15591           15609           15616           15625           15632           15658           15677           15696           15699           15707           15712           15730           15740           15758           15774           15790           15800           15821           15836           15846           15852           15861           15865           15882           15887           15898           15913           15930           15958           15974           15975           15993           16004           16032           16057           16076           16079           16091           16104           16131           16156           16161           16168           16194           16200           16216           16240           16265           16270           16283           16305           16316           16332           16336           16358           16386           16401           16422           16426           16440           16463           16478           16498           16526           16529           16545           16567           16588           16596           16613           16624           16631           16633           16652           16666           16676           16679           16691           16698           16712           16723           16726           16743           16753           16768           16783           16793           16813           16841           16854           16862           16881           16887           16888           16907           16911           16922           16933           16943           16984           16997           17018           17039           17056           17079           17109           17134           17140           17187           17193           17198           17224           17249           17270           17283           17290           17296           17297           17313           17319           17326           17331           17355           17357           17365           17385           17403           17412           17454           17467           17472           17493           17520           17527           17546           17547           17562           17569           17575           17588           17612           17631           17645           17661           17664           17668           17681           17703           17719           17728           17761           17770           17797           17817           17818           17829           17848           17863           17883           17898           17908           17936           17958           17970           17994           18003           18019           18047           18062           18068           18083           18110           18129           18143           18165           18169           18184           18195           18206           18235           18257           18260           18280           18312           18325           18339           18341           18366           18369           18384           18404           18435           18437           18444           18466           18474           18497           18511           18524           18550           18565           18586           18598           18606           18633           18643           18652           18674           18675           18688           18704           18719           18736           18759           18773           18797           18827           18851           18874           18883           18892           18926           18942           18943           18945           18949           18969           18983           19008           19022           19037           19059           19074           19076           19086           19101           19139           19150           19181           19192           19236           19256           19264           19301           19321           19334           19349           19357           19388           19390           19398           19413           19430           19431           19448           19458           19465           19475           19477           19493           19520           19523           19553           19566           19592           19603           19644           19654           19675           19690           19708           19716           19720           19728           19740           19760           19769           19788           19797           19808           19827           19839           19852           19866           19867           19873           19881           19891           19909           19930           19933           19952           19953           19958           19974           19984           19995           20000           20006           20024           20038           20040           20053           20086           20097           20122           20139           20158           20168           20182           20209           20220           20258           20283           20301          20310 fuzzer tests completed   
-cc -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -DZSTD_MULTITHREAD -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security  -pthread ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/dictBuilder/divsufsort.c ../lib/dictBuilder/zdict.c ../lib/dictBuilder/cover.c ../programs/datagen.c zstreamtest.c -o zstreamtest
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-./zstreamtest -T2mn 
-Starting zstream tester (64-bits, 1.1.5)
-Seed = 5692
-     1/     1        20              58             105             109             112             131             179             206             228             238             262             334             366             398             424             447             491             518             522             565             645             671             680             683             684             704             718             755             820             831             833             846             847             864             893             979            1005            1035            1055            1142            1173            1231            1234            1254            1307            1369            1385            1408            1452            1463            1490            1561            1563            1630            1653            1669            1697            1710            1731            1783            1794            1825            1837            1846            1849            1874            1908            1927            2023            2027            2043            2113            2128            2158            2207            2266            2311            2319            2335            2362            2377            2394            2401            2474            2589            2604            2618            2619            2636            2670            2685            2689            2723            2745            2770            2802            2835            2869            2929            2955            2964            2994            3039            3052            3101            3143            3170            3212            3220            3258            3311            3320            3364            3385            3448            3480            3486            3494            3548            3565            3567            3575            3602            3620            3674            3689            3695            3743            3750            3758            3781            3784            3813            3844            3886            3905            3929            3963            3991            4009            4032            4068            4074            4098            4099            4102            4129            4142            4176            4209            4238            4252            4259            4304            4313            4369            4406            4421            4430            4455            4516            4537            4542            4597            4677            4682            4768            4769            4780            4788            4809            4840            4912            4921            4968            4973            5005            5014            5036            5064            5096            5147            5175            5230            5276            5370            5378            5468            5470            5495            5527            5568            5620            5683            5685            5692            5721            5788            5830            5880            5907            5910            5928            5946            5956            5960            6003            6032            6043            6069            6084            6110            6134            6190            6194            6195            6210            6212            6263            6283            6297            6298            6330            6331            6345            6381            6406            6422            6483            6506            6549            6591            6618            6656            6658            6705            6737            6739            6753            6758            6779            6815            6847            6901            6944            6988            6989            7036            7073            7074            7097            7126            7141            7185            7202            7273            7287            7325            7332            7333            7409            7412            7413            7448            7493            7513            7515            7522            7540            7589            7590            7591            7598            7655            7672            7681            7685            7697            7730            7733            7745            7762            7841            7857            7883            7906            7934            7956            7979            8026            8068            8097            8102            8106            8127            8137            8150            8173            8187            8213            8240            8262            8284            8336            8355            8392            8406            8416            8423            8425            8451            8527            8528            8535            8553            8556            8604            8613            8642            8649            8666            8677            8700            8732            8759            8767            8788            8815            8858            8905            8912            8917            8958            8965            8967            8999            9017            9019            9042            9058            9059            9073          9077 fuzzer tests completed   
-     1/     1        20              58              92             106             109             131             161             202             218             228             238             248             330             334             362             367             398             424             447             478             514             522             565             643             671             680             683             704             718             749             790             821             831             833             846             864             893             979             987             994            1007            1035            1055            1142            1148            1195            1218            1231            1234            1254            1307            1352            1369            1371            1385            1408            1433            1463            1470            1490            1552            1561            1563            1594            1597            1646            1653            1669            1697            1705            1731            1743            1792            1794            1799            1837            1846            1849            1874            1908            1927            1996            2023            2033            2099            2128            2158            2192            2246            2291            2311            2319            2335            2362            2376            2377            2394            2401            2474            2573            2589            2618            2629            2636            2667            2675            2685            2689            2709            2726            2745            2767            2802            2834            2835            2865            2918            2955            2964            2986            3007            3035            3039            3052            3111            3143            3166            3170            3173            3212            3214            3220            3258            3308            3311            3315            3334            3364            3385            3448            3467            3480            3486            3489            3494            3518            3548            3562            3565            3567            3573            3576            3620            3674            3689            3695            3743            3750            3758            3781            3805            3819            3852            3892            3905            3929            3952            3963            3991            4009            4032            4043            4074            4098            4099            4102            4129            4141            4176            4209            4231            4252            4259            4279            4304            4313            4360            4369            4396            4421            4447            4455            4471            4537            4595            4653            4682            4768            4780            4806            4818            4877            4912            4960            4968            4982            5005            5014            5036            5064            5096            5146            5165            5227            5230            5276            5344            5378            5463            5470            5495            5527            5569            5610            5628            5685            5690            5692            5705            5721            5781            5788            5803            5830            5865            5880            5907            5910            5920            5946            5956            5960            6003            6032            6043            6048            6084            6110            6163            6194            6195            6210            6218            6262            6263            6287            6297            6298            6330            6345            6386            6406            6422            6487            6533            6591            6618            6656            6705            6740            6758            6779            6815            6847            6901            6927            6988            6989            7036            7044            7074            7097            7122            7126            7141            7156            7202            7246            7287            7325            7332            7409            7412            7413            7441          7448 fuzzer tests completed   
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c invalidDictionaries.c -o invalidDictionaries
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-./invalidDictionaries
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -I../lib/legacy -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security  -DZSTD_LEGACY_SUPPORT=4  ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstd_compress.c ../lib/compress/zstdmt_compress.c ../lib/legacy/zstd_v05.c ../lib/legacy/zstd_v07.c ../lib/legacy/zstd_v03.c ../lib/legacy/zstd_v06.c ../lib/legacy/zstd_v01.c ../lib/legacy/zstd_v04.c ../lib/legacy/zstd_v02.c legacy.c -o legacy
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-../lib/legacy/zstd_v05.c: In function ‘BITv05_initDStream’:
-../lib/legacy/zstd_v05.c:821:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  821 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:822:13: note: here
-  822 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v05.c:822:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  822 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:823:13: note: here
-  823 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v05.c:823:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  823 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:824:13: note: here
-  824 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v05.c:824:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  824 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:825:13: note: here
-  825 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v05.c:825:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  825 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:826:13: note: here
-  826 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v05.c: In function ‘ZBUFFv05_decompressContinue’:
-../lib/legacy/zstd_v05.c:3961:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3961 |             {
-      |             ^
-../lib/legacy/zstd_v05.c:3977:9: note: here
- 3977 |         case ZBUFFv05ds_decodeHeader:
-      |         ^~~~
-../lib/legacy/zstd_v05.c:4002:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4002 |                 zbc->stage = ZBUFFv05ds_read;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:4004:9: note: here
- 4004 |         case ZBUFFv05ds_read:
-      |         ^~~~
-../lib/legacy/zstd_v05.c:4025:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4025 |                 zbc->stage = ZBUFFv05ds_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:4028:9: note: here
- 4028 |         case ZBUFFv05ds_load:
-      |         ^~~~
-../lib/legacy/zstd_v05.c:4046:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4046 |                     zbc->stage = ZBUFFv05ds_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v05.c:4049:9: note: here
- 4049 |         case ZBUFFv05ds_flush:
-      |         ^~~~
-../lib/legacy/zstd_v07.c: In function ‘BITv07_initDStream’:
-../lib/legacy/zstd_v07.c:583:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  583 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:584:13: note: here
-  584 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v07.c:584:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  584 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:585:13: note: here
-  585 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v07.c:585:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  585 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:586:13: note: here
-  586 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v07.c:586:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  586 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:587:13: note: here
-  587 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v07.c:587:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  587 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:588:13: note: here
-  588 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v07.c: In function ‘ZSTDv07_decompressContinue’:
-../lib/legacy/zstd_v07.c:4049:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4049 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/legacy/zstd_v07.c:4051:5: note: here
- 4051 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/legacy/zstd_v07.c: In function ‘ZBUFFv07_decompressContinue’:
-../lib/legacy/zstd_v07.c:4495:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4495 |             zbd->stage = ZBUFFds_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:4498:9: note: here
- 4498 |         case ZBUFFds_read:
-      |         ^~~~
-../lib/legacy/zstd_v07.c:4518:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4518 |                 zbd->stage = ZBUFFds_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:4521:9: note: here
- 4521 |         case ZBUFFds_load:
-      |         ^~~~
-../lib/legacy/zstd_v07.c:4540:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4540 |                     zbd->stage = ZBUFFds_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~~
-../lib/legacy/zstd_v07.c:4545:9: note: here
- 4545 |         case ZBUFFds_flush:
-      |         ^~~~
-../lib/legacy/zstd_v03.c: In function ‘BIT_initDStream’:
-../lib/legacy/zstd_v03.c:414:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  414 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:415:13: note: here
-  415 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v03.c:415:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  415 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:416:13: note: here
-  416 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v03.c:416:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  416 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:417:13: note: here
-  417 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v03.c:417:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  417 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:418:13: note: here
-  418 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v03.c:418:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  418 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v03.c:419:13: note: here
-  419 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v06.c: In function ‘BITv06_initDStream’:
-../lib/legacy/zstd_v06.c:913:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  913 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:914:13: note: here
-  914 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v06.c:914:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  914 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:915:13: note: here
-  915 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v06.c:915:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  915 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:916:13: note: here
-  916 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v06.c:916:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  916 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:917:13: note: here
-  917 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v06.c:917:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  917 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:918:13: note: here
-  918 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v06.c: In function ‘ZSTDv06_decompressContinue’:
-../lib/legacy/zstd_v06.c:3791:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3791 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/legacy/zstd_v06.c:3793:5: note: here
- 3793 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/legacy/zstd_v06.c: In function ‘ZBUFFv06_decompressContinue’:
-../lib/legacy/zstd_v06.c:4118:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4118 |             zbd->stage = ZBUFFds_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:4120:9: note: here
- 4120 |         case ZBUFFds_read:
-      |         ^~~~
-../lib/legacy/zstd_v06.c:4139:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4139 |                 zbd->stage = ZBUFFds_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:4142:9: note: here
- 4142 |         case ZBUFFds_load:
-      |         ^~~~
-../lib/legacy/zstd_v06.c:4160:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 4160 |                     zbd->stage = ZBUFFds_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~~
-../lib/legacy/zstd_v06.c:4164:9: note: here
- 4164 |         case ZBUFFds_flush:
-      |         ^~~~
-../lib/legacy/zstd_v01.c: In function ‘FSE_initDStream’:
-../lib/legacy/zstd_v01.c:669:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  669 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:670:13: note: here
-  670 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v01.c:670:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  670 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:671:13: note: here
-  671 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v01.c:671:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  671 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:672:13: note: here
-  672 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v01.c:672:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  672 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:673:13: note: here
-  673 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v01.c:673:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  673 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v01.c:674:13: note: here
-  674 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v04.c: In function ‘BIT_initDStream’:
-../lib/legacy/zstd_v04.c:819:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  819 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:820:13: note: here
-  820 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v04.c:820:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  820 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:821:13: note: here
-  821 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v04.c:821:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  821 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:822:13: note: here
-  822 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v04.c:822:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  822 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:823:13: note: here
-  823 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v04.c:823:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  823 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:824:13: note: here
-  824 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-../lib/legacy/zstd_v04.c: In function ‘ZBUFF_decompressContinue’:
-../lib/legacy/zstd_v04.c:3667:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3667 |                 zbc->stage = ZBUFFds_read;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:3669:9: note: here
- 3669 |         case ZBUFFds_read:
-      |         ^~~~
-../lib/legacy/zstd_v04.c:3692:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3692 |                 zbc->stage = ZBUFFds_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:3695:9: note: here
- 3695 |         case ZBUFFds_load:
-      |         ^~~~
-../lib/legacy/zstd_v04.c:3713:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3713 |                     zbc->stage = ZBUFFds_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~~
-../lib/legacy/zstd_v04.c:3717:9: note: here
- 3717 |         case ZBUFFds_flush:
-      |         ^~~~
-../lib/legacy/zstd_v02.c: In function ‘BIT_initDStream’:
-../lib/legacy/zstd_v02.c:412:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  412 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[6]) << (sizeof(size_t)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:413:13: note: here
-  413 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |             ^~~~
-../lib/legacy/zstd_v02.c:413:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  413 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[5]) << (sizeof(size_t)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:414:13: note: here
-  414 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |             ^~~~
-../lib/legacy/zstd_v02.c:414:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  414 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[4]) << (sizeof(size_t)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:415:13: note: here
-  415 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |             ^~~~
-../lib/legacy/zstd_v02.c:415:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  415 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:416:13: note: here
-  416 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |             ^~~~
-../lib/legacy/zstd_v02.c:416:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  416 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/legacy/zstd_v02.c:417:13: note: here
-  417 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(bitD->start))[1]) <<  8;
-      |             ^~~~
-./legacy
-Simple API OK
-Streaming API OK
-OK
-cc      -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   ../lib/decompress/huf_decompress.c ../lib/decompress/zstd_decompress.c ../lib/common/entropy_common.c ../lib/common/pool.c ../lib/common/error_private.c ../lib/common/xxhash.c ../lib/common/fse_decompress.c ../lib/common/threading.c ../lib/common/zstd_common.c ../lib/compress/huf_compress.c ../lib/compress/fse_compress.c ../lib/compress/zstdmt_compress.c decodecorpus.c -o decodecorpus -lm
-In file included from ../lib/decompress/huf_decompress.c:58:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-In file included from ../lib/common/fse.h:304,
-                 from ../lib/decompress/zstd_decompress.c:47:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressContinue’:
-../lib/decompress/zstd_decompress.c:1771:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 1771 |         dctx->expected = 0;   /* not necessary to copy more */
-      |         ~~~~~~~~~~~~~~~^~~
-../lib/decompress/zstd_decompress.c:1773:5: note: here
- 1773 |     case ZSTDds_decodeFrameHeader:
-      |     ^~~~
-../lib/decompress/zstd_decompress.c: In function ‘ZSTD_decompressStream’:
-../lib/decompress/zstd_decompress.c:2393:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2393 |             zds->stage = zdss_read;
-      |             ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2396:9: note: here
- 2396 |         case zdss_read:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2416:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2416 |                 zds->stage = zdss_load;
-      |                 ~~~~~~~~~~~^~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2420:9: note: here
- 2420 |         case zdss_load:
-      |         ^~~~
-../lib/decompress/zstd_decompress.c:2439:32: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 2439 |                     zds->stage = zdss_flush;
-      |                     ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/decompress/zstd_decompress.c:2443:9: note: here
- 2443 |         case zdss_flush:
-      |         ^~~~
-In file included from ../lib/common/fse_decompress.c:62:
-../lib/common/bitstream.h: In function ‘BIT_initDStream’:
-../lib/common/bitstream.h:280:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  280 |             case 7: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[6]) << (sizeof(bitD->bitContainer)*8 - 16);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:281:13: note: here
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |             ^~~~
-../lib/common/bitstream.h:281:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  281 |             case 6: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[5]) << (sizeof(bitD->bitContainer)*8 - 24);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:282:13: note: here
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |             ^~~~
-../lib/common/bitstream.h:282:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  282 |             case 5: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[4]) << (sizeof(bitD->bitContainer)*8 - 32);
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:283:13: note: here
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |             ^~~~
-../lib/common/bitstream.h:283:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  283 |             case 4: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[3]) << 24;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:284:13: note: here
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |             ^~~~
-../lib/common/bitstream.h:284:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  284 |             case 3: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[2]) << 16;
-      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../lib/common/bitstream.h:285:13: note: here
-  285 |             case 2: bitD->bitContainer += (size_t)(((const BYTE*)(srcBuffer))[1]) <<  8;
-      |             ^~~~
-../lib/compress/huf_compress.c: In function ‘HUF_compress1X_usingCTable’:
-../lib/compress/huf_compress.c:444:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  444 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*4+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:465:18: note: in expansion of macro ‘HUF_FLUSHBITS_2’
-  465 |                  HUF_FLUSHBITS_2(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:466:9: note: here
-  466 |         case 2 : HUF_encodeSymbol(&bitC, ip[n+ 1], CTable);
-      |         ^~~~
-../lib/compress/huf_compress.c:441:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
-  441 |     if (sizeof((stream)->bitContainer)*8 < HUF_TABLELOG_MAX*2+7) HUF_FLUSHBITS(stream)
-      |        ^
-../lib/compress/huf_compress.c:467:18: note: in expansion of macro ‘HUF_FLUSHBITS_1’
-  467 |                  HUF_FLUSHBITS_1(&bitC);
-      |                  ^~~~~~~~~~~~~~~
-../lib/compress/huf_compress.c:468:9: note: here
-  468 |         case 1 : HUF_encodeSymbol(&bitC, ip[n+ 0], CTable);
-      |         ^~~~
-In file included from decodecorpus.c:23:
-../lib/compress/zstd_compress.c: In function ‘ZSTD_compressStream_generic’:
-../lib/compress/zstd_compress.c:3154:28: warning: this statement may fall through [-Wimplicit-fallthrough=]
- 3154 |                 zcs->stage = zcss_flush;   /* pass-through to flush stage */
-      |                 ~~~~~~~~~~~^~~~~~~~~~~~
-../lib/compress/zstd_compress.c:3157:9: note: here
- 3157 |         case zcss_flush:
-      |         ^~~~
-./decodecorpus -t -T30
-seed: 8604
-220           468           730           914           1106           1287           1454           1627           1830           1993           2242           2456           2641           2857           3092           3308           3532           3769           3977           4214           4400           4611           4795           5022           5264           5494           5668           5904           6093           6329           6552           6772           6955           7256           7399           7555           7712           7925           8122           8328           8547           8718           8935           9199           9410           9663           9867           10130           10371           10592           10811           11032           11238           11489           11739           11965           12167           12328           12518           12758           12976           13175           13331           13541           13744           14018           14225           14396           14610           14843           15006           15264           15486           15663           15889           16141           16342           16571           16739           17044           17195           17449           17725           17944           18193           18370           18593           18801           19006           19220           19446           19628           19825           20027           20243           20444           20690           20886           21138           21358           21536           21764           22017           22239           22456           22667           22885           23147           23405           23607           23761           23997           24298           24491           24715           24966           25173           25359           25560           25817           26041           26273           26498           26725           26924           27142           27350           27521           27720           27919           28115           28287           28468           28672           28931           29158           29383           29581           29790           30032           30221           30480           30699           30915           31130           31346           31570           31810           32033           32281           32473           32669           32841           33090           33357           33613           33850           34104           34337           34582           34833           35033           35202           35385           35591           35832           36091           36322           36494           36695           36995           37304           37531           37700           37943           38186           38414           38483 tests completed: OK
-cc    -I../lib -I../lib/common -I../lib/compress -I../lib/dictBuilder -I../lib/deprecated -I../programs -O3 -g -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wformat-security   -DZSTD_MULTITHREAD -pthread pool.c ../lib/common/pool.c ../lib/common/threading.c -o pool
-./pool
-PASS: testOrder
-PASS: testInvalid
-make[1]: Leaving directory '/home/zstd/tests'
